@@ -1,0 +1,40 @@
+/*Main Style Sheet*/
+
+/*  Main colors used #c74ac7   */
+
+/*  CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  Main Navigation  */
+
+.hero-section nav {
+    position: fixed;
+    background-color: #ffffff;
+}
+
+.hero-section nav a {
+    display: inline-block;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 15px 20px;
+    color: #c74ac7;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.hero-section nav a.active, .hero-section nav a:hover{
+    color: white;
+} 
+
+.hero-section nav a.active {
+    background-color: #c74ac7;
+}
+
+.hero-section nav a:hover{
+    background-color: #7d107d;
+}
+
