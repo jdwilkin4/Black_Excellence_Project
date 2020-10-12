@@ -11,7 +11,6 @@ html {
 
 body {
     font-size: 20px;
-    position: relative;
 }
 
 /*      HERO SECTION    */
@@ -21,15 +20,30 @@ body {
 }
 
 .hero-section nav {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: white;
+    position: fixed;
+    background-color: #ffffff;
 }
 
 .hero-section nav a {
+    display: inline-block;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 15px 20px;
     color: #c74ac7;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.hero-section nav a.active, .hero-section nav a:hover{
+    color: white;
+} 
+
+.hero-section nav a.active {
+    background-color: #c74ac7;
+}
+
+.hero-section nav a:hover{
+    background-color: #7d107d;
 }
 
 .hero-section .hero-img {
