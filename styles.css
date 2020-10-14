@@ -1,6 +1,9 @@
 /*Main Style Sheet*/
 
-/*  Main colors used #c74ac7   */
+/*  Main colors used #c74ac7 and #7d107d  */
+
+/*  Lato Font for body  */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 /*  CSS Reset */
 * {
@@ -9,14 +12,20 @@
     box-sizing: border-box;
 }
 
-/*  Main Navigation  */
-
-.hero-section nav {
-    position: fixed;
-    background-color: #ffffff;
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
 }
 
-.hero-section nav a {
+/*  Main Navigation  */
+
+nav {
+    position: fixed;
+    background-color: #ffffff;
+    
+}
+
+nav a {
     display: inline-block;
     border-radius: 5px;
     margin: 10px 5px;
@@ -26,15 +35,15 @@
     text-transform: uppercase;
 }
 
-.hero-section nav a.active, .hero-section nav a:hover{
+nav a.active, nav a:hover{
     color: white;
 } 
 
-.hero-section nav a.active {
+nav a.active {
     background-color: #c74ac7;
 }
 
-.hero-section nav a:hover{
+nav a:hover{
     background-color: #7d107d;
 }
 
