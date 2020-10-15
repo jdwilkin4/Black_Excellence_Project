@@ -4,4 +4,4 @@ This site is dedicated to the artists and organizations of the past and present 
 
 This site contains # profiles, # educational online games and # links to resources showcasing and celebrating black excellence. 
 
-Link to site is here. 
+Link to site. 
