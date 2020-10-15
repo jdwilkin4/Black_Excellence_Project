@@ -47,3 +47,33 @@ nav a:hover{
     background-color: #7d107d;
 }
 
+/*  Social Media    */
+.social-btns {
+    font-size: 1.5em;
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-facebook {
+    color: #1877f2;
+}
+
+.fa-twitter {
+    color: #00acee;
+}
+
+.fa-instagram-square {
+    color: #4c5fd7;
+}
+
+.fa-youtube {
+    color: #ff0000;
+}
+
+
+
