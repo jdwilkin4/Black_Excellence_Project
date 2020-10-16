@@ -39,3 +39,33 @@
     letter-spacing: 3px;
     display: block;
 }
+
+/*  BIO SECTION  */
+
+.bio-titles {
+    margin: 0 auto;
+    max-width: fit-content;
+    text-align: center;
+    background-color: #c74ac7;
+    color: white;
+    padding: 10px;
+    font-size: 2em;
+}
+
+.bio-sections {
+    margin: 40px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.bio-paragraph {
+    margin: 0 25px;
+    line-height: 50px;
+}
+
+.bio-img {
+    border-radius: 50%;
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+}
