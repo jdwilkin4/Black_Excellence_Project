@@ -43,6 +43,7 @@
 /*  BIO SECTION  */
 
 .bio-titles {
+    border-radius: 5px;
     margin: 0 auto;
     max-width: fit-content;
     text-align: center;
@@ -68,4 +69,21 @@
     max-width: 100%;
     width: 300px;
     height: 300px;
+}
+
+/*  FOOTER  */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #7d107d;
+}
+
+.footer-links {
+    font-size: 1.4em;
+    padding: 10px 0;
+    color: white;
+  
 }

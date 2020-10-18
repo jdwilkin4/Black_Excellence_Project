@@ -22,7 +22,7 @@ body {
 nav {
     position: fixed;
     background-color: #ffffff;
-    
+    width: 100%;
 }
 
 nav a {
