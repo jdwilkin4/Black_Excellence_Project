@@ -11,13 +11,16 @@
     </head>
     <body>
         <!--    MAIN NAVIGATION     -->
-        <nav class="nav-bar">
-            <a class="logo" href="#logo">BEP</a>
-            <a class="active" href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#artists">Artists</a>
-            <a href="#resources">Resources</a>
-            <a href="#contact">Contact</a>
+        <nav class="nav-bar" id="mobile-nav">
+            <a class="nav-links" href="#logo">BEP</a>
+            <a class="nav-links active" href="#home">Home</a>
+            <a class="nav-links" href="#about">About</a>
+            <a class="nav-links" href="#artists">Artists</a>
+            <a class="nav-links" href="#resources">Resources</a>
+            <a class="nav-links" href="#contact">Contact</a>
+            <a href="javascript:void(0);" class="mobile-bars" onclick="mobileNav()">
+                <i class="fas fa-bars"></i>
+            </a>
         </nav> 
 
         <!--    HERO SECTION    -->
