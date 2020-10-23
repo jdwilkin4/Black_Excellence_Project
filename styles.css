@@ -5,6 +5,12 @@
 /*  Lato Font for body  */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
+/* Sansita google font used for female artist pages */
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap');
+
+/* Righteous google font used for male artist pages */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 /*  CSS Reset */
 * {
     margin: 0;
@@ -84,6 +90,96 @@ nav .mobile-bars:hover {
 
 .fa-youtube {
     color: #ff0000;
+}
+
+
+/* Artist page styles*/
+
+/*      HERO SECTION    */
+.hero-section{ 
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.hero-img {
+    border-radius: 90%;
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    text-align: center;
+    font-size: 3em;
+}
+
+.female-titles, .male-titles {
+    color: #c74ac7;
+    letter-spacing: 3px;
+    display: block;
+}
+
+.female-titles {
+    font-family: 'Sansita Swashed', cursive;
+}
+
+.male-titles {
+    font-family: 'Righteous', cursive;
+}
+
+
+
+/*  BIO SECTION  */
+
+.bio-titles {
+    border-radius: 5px;
+    margin: 0 auto;
+    max-width: fit-content;
+    text-align: center;
+    background-color: #c74ac7;
+    color: white;
+    padding: 10px;
+    font-size: 2em;
+}
+
+.bio-sections {
+    margin: 40px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.bio-paragraph {
+    margin: 0 25px;
+    line-height: 50px;
+}
+
+.bio-img {
+    border-radius: 50%;
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+}
+
+/*  FOOTER  */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #7d107d;
+}
+
+.footer-links {
+    font-size: 1.4em;
+    padding: 10px 0;
+    color: white;
+  
 }
 
 @media screen and (max-width: 600px) {
