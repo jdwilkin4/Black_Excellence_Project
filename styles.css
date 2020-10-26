@@ -165,9 +165,9 @@ nav .mobile-bars:hover {
     height: 300px;
 }
 
-/*  FOOTER  */
+/*  ARTIST LINKS AND RESOURCES  */
 
-footer {
+.artist-resources {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -175,11 +175,10 @@ footer {
     background-color: #7d107d;
 }
 
-.footer-links {
+.artist-links {
     font-size: 1.4em;
     padding: 10px 0;
     color: white;
-  
 }
 
 @media screen and (max-width: 600px) {
