@@ -41,7 +41,7 @@ nav .nav-links {
     text-transform: uppercase;
 }
 
-nav a.active, nav a:hover{
+nav a.active, nav a:hover:not(:first-child){
     color: white;
 } 
 
@@ -49,7 +49,7 @@ nav .active {
     background-color: #c74ac7;
 }
 
-nav .nav-links:hover{
+nav .nav-links:hover:not(:first-child) {
     background-color: #7d107d;
 }
 
@@ -136,7 +136,7 @@ nav .mobile-bars:hover {
 
 /*  BIO SECTION  */
 
-.bio-titles {
+.bio-titles, .learn-more {
     border-radius: 5px;
     margin: 0 auto;
     max-width: fit-content;
@@ -171,15 +171,25 @@ nav .mobile-bars:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0;
-    background-color: #7d107d;
+    max-width: fit-content;
+    margin: 60px auto;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 2px #7d107d;
 }
 
 .artist-links {
+    text-decoration: none;
     font-size: 1.4em;
-    padding: 10px 0;
+    padding: 20px 0;
+    background-color: #c74ac7;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
     color: white;
 }
+
+/* The learn more class stylings are grouped with the bio titles class styles */
 
 @media screen and (max-width: 600px) {
     .nav-bar a:not(:first-child) {
