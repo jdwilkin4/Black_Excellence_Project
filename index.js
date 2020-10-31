@@ -1,6 +1,5 @@
 //main navigation menu
-const template = document.createElement('template');
-template.innerHTML = `
+document.getElementById("navMenu").innerHTML = `
 <nav class="nav-bar" id="mobile-nav">
 <a class="nav-links" href="#logo">BEP</a>
 <a class="nav-links active" href="/index.html">Home</a>
@@ -12,9 +11,7 @@ template.innerHTML = `
     <i class="fas fa-bars"></i>
 </a>
 </nav> 
-`
-
-document.body.appendChild(template.content);
+`;
 
 
 // mobile nav bar toggle
