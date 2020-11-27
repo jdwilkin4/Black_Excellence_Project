@@ -3,6 +3,8 @@ const submit = document.getElementById("submit");
 const reset = document.getElementById("reset");
 const results = document.getElementById("results");
 
+let numOfCorrectAnswers = 0;
+
 
 const questions = [
     {
@@ -116,12 +118,12 @@ let createQuiz = () => {
             
             const possibleAnswers = [];
 
-            for (const answerLetter of currentQuestion.possibleAnswers) {
+            for (answerLetter in currentQuestion.answers) {
                 possibleAnswers.push(
                     `<label>
                     <input type="radio" name="question${questionNum}" value="${answerLetter}">
-                    ${answerLetter}:
-                    ${currentQuestion.possibleAnswers[answerLetter]}
+                    ${answerLetter} :
+                    ${currentQuestion.answers[answerLetter]}
                     </label>`  
                 );
             }
@@ -135,4 +137,34 @@ let createQuiz = () => {
     quiz.innerHTML = quizContainer.join('');
 }
 
-createQuiz();
+createQuiz(); 
+
+let displayResults = () => {
+    const answerContainer = quiz.querySelectorAll('.answers');
+
+    questions.forEach((currentQuestion, questionNum) => {
+        const collectionOfAnswers = answerContainer[questionNum];
+        const checkedInput = `input[name=question${questionNum}]:checked`;
+        const userAnswer = (collectionOfAnswers.querySelector(checkedInput) || {}).value;
+
+        if(userAnswer === currentQuestion.correctAnswer){
+            numOfCorrectAnswers++;
+            answerContainer[questionNum].style.color = 'green';
+        } else {
+            answerContainer[questionNum].style.color = 'red';
+        }
+    });
+    results.innerHTML = `${numOfCorrectAnswers} out of ${questions.length}`; 
+
+}
+
+//needs work
+let resetQuiz = () => {
+    createQuiz();
+    //hide result.innerHTML
+
+}
+
+submit.addEventListener('click', displayResults);
+reset.addEventListener('click', resetQuiz);
+
