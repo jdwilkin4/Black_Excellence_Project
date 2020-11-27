@@ -1,3 +1,9 @@
+const quiz = document.getElementById("quiz");
+const submit = document.getElementById("submit");
+const reset = document.getElementById("reset");
+const results = document.getElementById("results");
+
+
 const questions = [
     {
         question: "What age did Florence have her first composition published?",
@@ -100,3 +106,33 @@ const questions = [
         correctAnswer: "d"
     }
 ]
+
+let createQuiz = () => {
+    
+    const quizContainer = [];
+
+    questions.forEach(
+        (currentQuestion, questionNum) => {
+            
+            const possibleAnswers = [];
+
+            for (const answerLetter of currentQuestion.possibleAnswers) {
+                possibleAnswers.push(
+                    `<label>
+                    <input type="radio" name="question${questionNum}" value="${answerLetter}">
+                    ${answerLetter}:
+                    ${currentQuestion.possibleAnswers[answerLetter]}
+                    </label>`  
+                );
+            }
+            quizContainer.push(
+                `<div class="question">${currentQuestion.question}</div>
+                <div class="answers">${possibleAnswers.join('')}</div>`
+            );
+        }
+    );
+
+    quiz.innerHTML = quizContainer.join('');
+}
+
+createQuiz();
