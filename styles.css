@@ -189,6 +189,49 @@ nav .mobile-bars:hover {
     color: white;
 }
 
+/*  Styles for quiz */
+.quiz-container{
+    margin: 20px;
+    text-align: center;
+}
+
+.question{
+    color: white;
+    font-weight: 700;
+    font-size: 1.2em;
+    background-color: #c74ac7;
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 3px;
+
+}
+
+.answers {
+    margin: 40px 0;
+}
+
+.answers label{
+    display: block;
+    margin: 15px 0;
+}
+
+#submit, #reset{
+    font-size: 1.1em;
+    background-color: #7d107d;
+    color: #fff;
+    border: 0px;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: #7d107d;
+}
+
+
 /* The learn more class stylings are grouped with the bio titles class styles */
 
 @media screen and (max-width: 600px) {
