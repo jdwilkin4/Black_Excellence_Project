@@ -26,6 +26,7 @@ body {
 /*  Main Navigation  */
 
 nav {
+    top:0;
     position: fixed;
     background-color: #ffffff;
     width: 100%;
@@ -183,16 +184,33 @@ nav .mobile-bars:hover {
     font-size: 1.4em;
     padding: 20px 0;
     background-color: #c74ac7;
-    padding: 10px;
     margin: 15px;
     border-radius: 5px;
     color: white;
 }
 
 /*  Styles for quiz */
+
 .quiz-container{
     margin: 20px;
     text-align: center;
+}
+
+.quiz-title {
+    border-radius: 5px;
+    max-width: fit-content;
+    background-color: #7d107d;
+    color: white;
+    padding: 10px;
+    font-size: 2em;
+    margin: 100px auto 20px;
+}
+
+.artist-review {
+    text-align: center;
+    display: block;
+    color: blue;
+    margin: 30px auto;
 }
 
 .question{

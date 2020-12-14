@@ -5,7 +5,6 @@ const results = document.getElementById("results");
 
 let numOfCorrectAnswers = 0;
 
-
 const questions = [
     {
         question: "What age did Florence have her first composition published?",
@@ -136,7 +135,7 @@ let createQuiz = () => {
 
     quiz.innerHTML = quizContainer.join('');
 }
-
+//call this function so it displays right away
 createQuiz(); 
 
 let displayResults = () => {
@@ -151,18 +150,19 @@ let displayResults = () => {
             numOfCorrectAnswers++;
             answerContainer[questionNum].style.color = 'green';
         } else {
-            answerContainer[questionNum].style.color = 'red';
+           answerContainer[questionNum].style.color = 'red';
+           //try to display correct answer
         }
     });
     results.innerHTML = `${numOfCorrectAnswers} out of ${questions.length}`; 
 
 }
 
-//needs work
 let resetQuiz = () => {
     createQuiz();
-    //hide result.innerHTML
-
+    results.innerHTML = "Let's see how you did";
+    numOfCorrectAnswers=0;
+    window.scrollTo(0, 0);
 }
 
 submit.addEventListener('click', displayResults);
