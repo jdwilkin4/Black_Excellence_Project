@@ -7,7 +7,7 @@ let numOfCorrectAnswers = 0;
 
 const questions = [
     {
-        question: "What age did Florence have her first composition published?",
+        question: "1. What age did Florence have her first composition published?",
         answers: {
             a:	9,
             b:	10,
@@ -17,7 +17,7 @@ const questions = [
         correctAnswer: "c"
     },
     {
-        question: "Where did Florence receive her Bachelor of Music degree?",
+        question: "2. Where did Florence receive her Bachelor of Music degree?",
         answers: {
             a:	"New England Conservatory",
             b:	"Julliard",
@@ -27,7 +27,7 @@ const questions = [
         correctAnswer: "a"
     },
     {
-        question: "What was the name of the music teacher’s association that denied Florence admission?",
+        question: "3. What was the name of the music teacher’s association that denied Florence admission?",
         answers: {
             a:	"Arkansas Music Teachers Association",
             b:	"Chicago Music Teachers Association",
@@ -37,7 +37,7 @@ const questions = [
         correctAnswer: "a"
     },
     {
-        question: "What was the name of Florence’s second husband?",
+        question: "4. What was the name of Florence’s second husband?",
         answers: {
             a:	"Randy Johnson",
             b:	"Scott Mills",
@@ -47,7 +47,7 @@ const questions = [
         correctAnswer: "d"
     },
     {
-        question: "What was the name of the orchestra that performed her first symphony in 1933?",
+        question: "5. What was the name of the orchestra that performed her first symphony in 1933?",
         answers: {
             a:	"New York Philharmonic",
             b:	"Chicago Symphony",
@@ -57,7 +57,7 @@ const questions = [
         correctAnswer: "b"
     },
     {
-        question: "Which college did Florence NOT continue her education in? ",
+        question: "6. Which college did Florence NOT continue her education in? ",
         answers: {
             a:	"American Conservatory of Music",
             b:	"Chicago Teachers College",
@@ -67,7 +67,7 @@ const questions = [
         correctAnswer: "c"
     },
     {
-        question: "What does CMA stand for?",
+        question: "7. What does CMA stand for?",
         answers: {
             a:	"Charlotte Music Association",
             b:	"Chicago Music Association",
@@ -77,7 +77,7 @@ const questions = [
         correctAnswer: "b"
     },
     {
-        question: "Which way did Florence NOT earn a living?",
+        question: "8. Which way did Florence NOT earn a living?",
         answers: {
             a:	"Opera singer",
             b:	"Sales from piano works",
@@ -87,7 +87,7 @@ const questions = [
         correctAnswer: "a"
     },
     {
-        question: "Which conductor commissioned Florence to write a suite for strings?",
+        question: "9. Which conductor commissioned Florence to write a suite for strings?",
         answers: {
             a:	"Leonard Bernstein",
             b:	"Pierre Boulez",
@@ -97,7 +97,7 @@ const questions = [
         correctAnswer: "d"
     },
     {
-        question: "What year did Florence Price die from complications of a stroke?",
+        question: "10. What year did Florence Price die from complications of a stroke?",
         answers: {
             a:	1950,
             b:	1940,
@@ -135,7 +135,6 @@ let createQuiz = () => {
 
     quiz.innerHTML = quizContainer.join('');
 }
-//call this function so it displays right away
 createQuiz(); 
 
 let displayResults = () => {
@@ -150,8 +149,7 @@ let displayResults = () => {
             numOfCorrectAnswers++;
             answerContainer[questionNum].style.color = 'green';
         } else {
-           answerContainer[questionNum].style.color = 'red';
-           //try to display correct answer
+            answerContainer[questionNum].style.color = 'red';
         }
     });
     results.innerHTML = `${numOfCorrectAnswers} out of ${questions.length}`; 
