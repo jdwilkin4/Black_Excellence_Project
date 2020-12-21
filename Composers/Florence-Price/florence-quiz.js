@@ -3,9 +3,7 @@ const submit = document.getElementById("submit");
 const reset = document.getElementById("reset");
 const results = document.getElementById("results");
 
-//is this right?
-//let questions = require('./florence-quiz-questions.json');
-import questions from "./florence-quiz-questions.json" // or is this right
+let questions = {};
 let numOfCorrectAnswers = 0;
 
 let createQuiz = () => {
@@ -62,8 +60,28 @@ let resetQuiz = () => {
     window.scrollTo(0, 0);
 }
 
-submit.addEventListener('click', displayResults);
-reset.addEventListener('click', resetQuiz);
-createQuiz(); // shows quiz
+const loadJSON = () => {
+  return new Promise((resolve, rejecT) => {
+    const xobj = new XMLHttpRequest();
+    xobj.overrideMimeType("application/json");
+    xobj.open('GET', 'florence-quiz-questions.json', true);
+    xobj.onreadystatechange = () => {
+          if (xobj.readyState == 4 && xobj.status == "200") {
+            return resolve(xobj.responseText);
+          }
+    };
+    xobj.send(null);  
+ });
+}
+
+loadJSON()
+  .then((questionsJson) => {
+    questions = questionsJson;
+    submit.addEventListener('click', displayResults);
+    reset.addEventListener('click', resetQuiz);
+    createQuiz();
+  }
+  ,loadJSON().catch(alert)
 
 
+)
