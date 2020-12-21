@@ -3,7 +3,9 @@ const submit = document.getElementById("submit");
 const reset = document.getElementById("reset");
 const results = document.getElementById("results");
 
-let questions = require('./florence-quiz-questions.json');
+//is this right?
+//let questions = require('./florence-quiz-questions.json');
+import questions from "./florence-quiz-questions.json" // or is this right
 let numOfCorrectAnswers = 0;
 
 let createQuiz = () => {
