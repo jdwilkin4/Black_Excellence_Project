@@ -9,7 +9,7 @@ let numOfCorrectAnswers = 0;
 let createQuiz = () => {
     
     const quizContainer = [];
-
+        // find a loop for objects instead 
     questions.forEach(
         (currentQuestion, questionNum) => {
             
@@ -36,7 +36,7 @@ let createQuiz = () => {
 
 let displayResults = () => {
     const answerContainer = quiz.querySelectorAll('.answers');
-
+    // find a loop for objects instead 
     questions.forEach((currentQuestion, questionNum) => {
         const collectionOfAnswers = answerContainer[questionNum];
         const checkedInput = `input[name=question${questionNum}]:checked`;
@@ -80,8 +80,8 @@ loadJSON()
     submit.addEventListener('click', displayResults);
     reset.addEventListener('click', resetQuiz);
     createQuiz();
-  }
-  ,loadJSON().catch(alert)
+  })
+  .catch(alert);
 
 
-)
+
