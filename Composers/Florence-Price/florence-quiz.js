@@ -9,7 +9,6 @@ let numOfCorrectAnswers = 0;
 let createQuiz = () => {
     
     const quizContainer = [];
-        // find a loop for objects instead 
     questions.forEach(
         (currentQuestion, questionNum) => {
             
@@ -36,7 +35,6 @@ let createQuiz = () => {
 
 let displayResults = () => {
     const answerContainer = quiz.querySelectorAll('.answers');
-    // find a loop for objects instead 
     questions.forEach((currentQuestion, questionNum) => {
         const collectionOfAnswers = answerContainer[questionNum];
         const checkedInput = `input[name=question${questionNum}]:checked`;
@@ -60,19 +58,17 @@ let resetQuiz = () => {
     window.scrollTo(0, 0);
 }
 
-const loadJSON = () => {
-  return new Promise((resolve, rejecT) => {
-    const xobj = new XMLHttpRequest();
-    xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'florence-quiz-questions.json', true);
-    xobj.onreadystatechange = () => {
-          if (xobj.readyState == 4 && xobj.status == "200") {
-            return resolve(xobj.responseText);
-          }
-    };
-    xobj.send(null);  
- });
-}
+const loadJSON = (callback) => { 
+    const xobj = new XMLHttpRequest(); 
+     xobj.overrideMimeType("application/json"); 
+     xobj.open('GET', 'florence-quiz-questions.json', true);  
+     xobj.onreadystatechange =  () => { 
+        if (xobj.readyState == 4 && xobj.status == "200") { 
+        callback(xobj.responseText); 
+        } 
+     }; 
+     xobj.send(null);  
+} 
 
 loadJSON()
   .then((questionsJson) => {
@@ -82,6 +78,8 @@ loadJSON()
     createQuiz();
   })
   .catch(alert);
+   
+
 
 
 
