@@ -135,7 +135,7 @@ let createQuiz = () => {
 
     quiz.innerHTML = quizContainer.join('');
 }
-createQuiz(); 
+
 
 let displayResults = () => {
     const answerContainer = quiz.querySelectorAll('.answers');
@@ -165,4 +165,5 @@ let resetQuiz = () => {
 
 submit.addEventListener('click', displayResults);
 reset.addEventListener('click', resetQuiz);
+createQuiz(); 
 
