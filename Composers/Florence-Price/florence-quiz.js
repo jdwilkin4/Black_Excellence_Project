@@ -2,6 +2,8 @@ const quiz = document.getElementById("quiz");
 const submit = document.getElementById("submit");
 const reset = document.getElementById("reset");
 const results = document.getElementById("results");
+const answerKey = document.getElementById("answer-key");
+const resultsMessage = document.getElementById("results-message");
 
 let numOfCorrectAnswers = 0;
 
@@ -147,18 +149,40 @@ let displayResults = () => {
 
         if(userAnswer === currentQuestion.correctAnswer){
             numOfCorrectAnswers++;
-            answerContainer[questionNum].style.color = 'green';
+            answerContainer[questionNum].style.color = '#1AC923';
         } else {
-            answerContainer[questionNum].style.color = 'red';
+            answerContainer[questionNum].style.color = '#E21D42';
         }
     });
-    results.innerHTML = `${numOfCorrectAnswers} out of ${questions.length}`; 
 
+    //display number of correct answers by user
+    results.innerHTML = `<div>${numOfCorrectAnswers} out of ${questions.length} correct.</div>` 
+
+    // custom message based on user results
+    if(numOfCorrectAnswers < 6 ){
+        resultsMessage.innerHTML = `Hmmm... Not great`
+    } else if(numOfCorrectAnswers >= 6 && numOfCorrectAnswers<=7){
+        resultsMessage.innerHTML = `Not bad.`
+    } else if(numOfCorrectAnswers >= 8 && numOfCorrectAnswers<=9){
+        resultsMessage.innerHTML = `Good Work!`
+    } else {
+        resultsMessage.innerHTML = `WOW!!! Perfect score!`
+    }
+
+    //display answer key
+    answerKey.style.display = "block"
+    answerKey.innerHTML = `<div class="answer-key">Answer key</div> `
+
+    for(let i=0; i<questions.length; i++){
+       answerKey.innerHTML += ` <div class="correct">${i+1}. ${questions[i].correctAnswer}</div>`
+    }
 }
 
 let resetQuiz = () => {
     createQuiz();
     results.innerHTML = "Let's see how you did";
+    resultsMessage.innerHTML = "";
+    answerKey.style.display = "none"
     numOfCorrectAnswers=0;
     window.scrollTo(0, 0);
 }

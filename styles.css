@@ -234,7 +234,7 @@ nav .mobile-bars:hover {
     margin: 15px 0;
 }
 
-#submit, #reset{
+#submit, #reset {
     font-size: 1.1em;
     background-color: #7d107d;
     color: #fff;
@@ -243,11 +243,48 @@ nav .mobile-bars:hover {
     padding: 20px;
     margin: 0 15px;
     cursor: pointer;
+    box-shadow: 4px 4px 10px 2px black;
 }
 
 #submit:hover{
     background-color: #7d107d;
 }
+
+#results, #results-message{
+    color: black;
+    font-size: 1.2em;
+}
+
+#results{
+    margin: 30px 0px 5px;
+  
+}
+#results-message{
+    margin: 10px 0;
+}
+
+#answer-key{
+    background-color:#c74ac7 ;
+    color: white;
+    font-size: 1.1em;
+    margin: 10px 0;
+    max-width: fit-content;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 3px;
+    box-shadow: 4px 4px 10px 2px #7d107d;
+}
+
+.answer-key {
+    font-size: 1.3em;
+}
+
+.correct {
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+
 
 
 /* The learn more class stylings are grouped with the bio titles class styles */
