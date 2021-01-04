@@ -111,6 +111,7 @@ const questions = [
 ]
 
 let createQuiz = () => {
+    answerKey.style.display = "none"
     
     const quizContainer = [];
 
@@ -183,7 +184,7 @@ let resetQuiz = () => {
     results.innerHTML = "Let's see how you did";
     resultsMessage.innerHTML = "";
     answerKey.style.display = "none"
-    numOfCorrectAnswers=0;
+    numOfCorrectAnswers = 0;
     window.scrollTo(0, 0);
 }
 
