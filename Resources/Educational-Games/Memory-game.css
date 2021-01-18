@@ -1,0 +1,37 @@
+h1, .front-card {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 100px;
+    font-size: 4rem;
+}
+
+.row {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 black;
+}
+
+.front-card, .back-card {
+    backface-visibility: hidden;
+}
+
+.front-card {
+    font-size: 6rem;
+    transform: rotateX(0deg);
+}
+
+.back-card {
+    transform: rotateY(180deg);
+}
+
+img {
+    width: 150px;
+    height: 40px;
+}
