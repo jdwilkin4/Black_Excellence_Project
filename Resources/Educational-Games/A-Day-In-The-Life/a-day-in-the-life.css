@@ -1,0 +1,47 @@
+/*  Lato Font for body  */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+.main-title {
+    box-shadow: 10px 5px 5px #7d107d;
+    margin: 10% auto 3%;
+    text-align: center;
+    padding: 2%;  
+    max-width: fit-content;
+    border-radius: 10px;
+    color: white;
+    background-color: #c74ac7;
+}
+
+
+p {
+    margin: 2% 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.container {
+    box-shadow: 5px 5px 5px #c74ac7;
+    margin: 5%;
+    border: 3px solid #c74ac7;
+    border-radius: 20px;
+}
+
+.btn-row {
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    cursor: pointer;
+    box-shadow: 15px 5px 5px #7d107d;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 2rem;
+    background-color: #c74ac7;
+    color: white;
+    border: none;
+}
