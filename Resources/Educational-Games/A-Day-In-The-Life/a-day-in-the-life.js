@@ -1,41 +1,39 @@
-let money = 300;
-let imgs = document.getElementById('imgs');
-let message = document.getElementById('message');
-const tour = document.getElementById('tour');
-const gigs = document.getElementById('gigs');
-const publishing = document.getElementById('publishing');
-const education = document.getElementById('education');
+let message = document.getElementById("message");
+const home = document.getElementById("home");
+const tour = document.getElementById("tour");
+const gigs = document.getElementById("gigs");
+const publishing = document.getElementById("publishing");
+const education = document.getElementById("education");
 
 
-//initialize the buttons with onclick functions
-tour.onclick = goOnTour;
-gigs.onclick = getGigs;
-publishing.onclick = publish;
-education.onclick = getEducated;
-
-const locations = [
+/* const locations = [
     {
         name:'Grand Concert Hall',
         'button text':['Rehearse', 'Perform', 'Negotiate Rates', 'Go Home'],
         'button functions' : [rehearse, perform, negotiate, home],
         text:'Welcome to Grand Concert Hall'
     }
-]
+] */
 
-
-const goOnTour = () => {
-    
+//home button
+function goHome() {
+    message.innerHTML = "Welcome home";
 }
 
-const getGigs = () => {
-   message.innerText = "hi"
+//main buttons
+function goOnTour() {
+
+} 
+
+function getGigs() {
+
 }
 
-const publish = () => {
+function publish() {
 
 }
 
-const getEducated = () => {
+function getEducated() {
     
 }
 
@@ -52,6 +50,6 @@ const negotiate = () => {
 
 }
 
-const home = () => {
 
-}
+
+

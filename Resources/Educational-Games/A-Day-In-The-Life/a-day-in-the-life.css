@@ -4,9 +4,10 @@
 body {
     font-family: 'Lato', sans-serif;
 }
+
 .main-title {
     box-shadow: 10px 5px 5px #7d107d;
-    margin: 10% auto 3%;
+    margin: 9% auto 3%;
     text-align: center;
     padding: 2%;  
     max-width: fit-content;
@@ -15,16 +16,16 @@ body {
     background-color: #c74ac7;
 }
 
-
 p {
     margin: 2% 0;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .container {
+    width: 80%;
     box-shadow: 5px 5px 5px #c74ac7;
-    margin: 5%;
+    margin: 3% auto;
     border: 3px solid #c74ac7;
     border-radius: 20px;
 }
@@ -40,7 +41,7 @@ button {
     box-shadow: 15px 5px 5px #7d107d;
     padding: 10px;
     border-radius: 15px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     background-color: #c74ac7;
     color: white;
     border: none;

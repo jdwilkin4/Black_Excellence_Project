@@ -13,19 +13,22 @@
         <!--    MAIN NAVIGATION   -->
         <nav id="navMenu"></nav>
 
-        <h1 class="main-title">A day in the Life of a black artist</h1>
-        <p> Welcome to 1930's America</p>
-        <p>Explore your options below as an emerging black pianist/composer</p>
+        <header>
+            <h1 class="main-title">A day in the Life of a black artist</h1>
+            <p> Welcome to 1930's America</p>
+            <p>Explore your options below as an emerging black pianist/composer</p>
+        </header>
 
-        <div class="container">
-            <p id="message">test</p>
+        <main class="container">
+            <p id="message">What would you like to do today?</p>
             <div class="btn-row">
-                <button id="tour">Go on Tour</button>
-                <button id="gigs">Local gigs</button>
-                <button id="publishing">Getting published</button>
-                <button id="education">Education</button>
+                <button onclick="goHome()" id="home">Home</button>
+                <button onclick="goOnTour()" id="tour">Go on Tour</button>
+                <button onclick="getGigs()" id="gigs">Local gigs</button>
+                <button onclick="publish()" id="publishing">Getting published</button>
+                <button onclick="getEducated()" id="education">Education</button>
             </div>
-        </div>
+        </main>
      
         <script src="/index.js"></script>
         <script src="/Resources/Educational-Games/A-Day-In-The-Life/a-day-in-the-life.js"></script>
