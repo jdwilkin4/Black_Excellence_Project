@@ -31,7 +31,7 @@ p {
 }
 
 .btn-row {
-    padding: 5%;
+    padding: 3%;
     display: flex;
     justify-content: space-around;
 }
