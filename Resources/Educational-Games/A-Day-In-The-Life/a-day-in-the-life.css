@@ -22,6 +22,15 @@ p {
     font-size: 1.5rem;
 }
 
+img {
+    box-shadow: 10px 10px 5px black;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+}
+
 .container {
     width: 80%;
     box-shadow: 5px 5px 5px #c74ac7;
