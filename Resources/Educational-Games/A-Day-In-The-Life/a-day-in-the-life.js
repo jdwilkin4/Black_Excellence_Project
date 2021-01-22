@@ -6,8 +6,8 @@ const button1 = document.getElementById("btn1");
 const button2  = document.getElementById("btn2");
 const button3 = document.getElementById("btn3");
 const button4 = document.getElementById("btn4");
-let weeks = 0;
 let money = 0;
+let randomMsg;
 
 //onclick options for main buttons
 home.onclick = goHome;
@@ -16,7 +16,7 @@ button2.onclick = getGigs;
 button3.onclick = teaching;
 button4.onclick = getEducated;
 
-//function for smooth transitions 
+//function for smooth transitions for images
 const fadeIn = (el, time) => {
     el.style.opacity = 0;
     el.style.display = "block";
@@ -39,27 +39,62 @@ const fadeIn = (el, time) => {
 function shuffle(array) {
     let remainingElements = array.length, temp, i;
   
-    // While there remain elements to shuffle…
     while (remainingElements) {
   
-      // Pick a remaining element…
       i = Math.floor(Math.random() * remainingElements--);
   
-      // And swap it with the current element.
       temp = array[remainingElements];
       array[remainingElements] = array[i];
       array[i] = temp;
     }
+    let randomNum = Math.floor(Math.random() * array.length);
+    randomMsg = array[randomNum];
   
-    return array;
+    return randomMsg;
 }
-  
-  
 
+//array for performance outcomes
+let gigResponses = [
+    "You were late to the gig and not allowed to perform.",
+    "You got into an argument with the manager of the club and they cut your set short.",
+    "You were not allowed to use the bathroom because it is for whites only.",
+    "You received a standing ovation!",
+    "You stumbled a little bit during the set and received a few boos onstage.",
+    "You were mugged outside after the gig and they took all of your money.",
+    "An agent was impressed by your set and wants to speak with you.",
+    "A record executive was impressed by your set and want to speak with you.",
+    "A local celebrity heard you perform and was really impressed.",
+    "A major celebrity heard you perform and invited you to hang with them afterwards.",
+    "A publishing executive heard your performance and wants to speak with you.",
+    "A famous jazz musician was impressed by your set and wants to speak with you."
+];
+
+//this is for the tour and local gig functions
+function performanceOutcomes(){
+    shuffle(gigResponses);
+    if(randomMsg === "You were late to the gig and not allowed to perform." || randomMsg === "You were mugged outside after the gig and they took all of your money."){
+        message.innerHTML = randomMsg;
+        money += 0
+        earnings
+        earnings.innerHTML = `Total earnings: $ ${money}`;
+    }else {
+        message.innerHTML = randomMsg;
+        money += 5;
+        earnings
+        earnings.innerHTML = `Total earnings: $ ${money}`;
+    } 
+}
+
+//pick a club
+function selectAClub() {
+    message.innerHTML = "Choose a spot"
+}
+
+    
 //home button
 function goHome() {
-    message.innerHTML = "Welcome home";
-    earnings.innerHTML = `Total earnings after week ${weeks}: $ ${money}`;
+    message.innerHTML = "Welcome home!";
+    earnings.innerHTML = `Total earnings: $ ${money}`;
     img.setAttribute("src", "/Resources/Educational-Games/A-Day-In-The-Life/images/new-york-cityscape.jpg");
     fadeIn(img,1000);
     button1.innerHTML = "Go on Tour";
@@ -83,91 +118,208 @@ function goOnTour() {
     button2.onclick = midwest;
     button3.onclick = south;
     button4.onclick = eastCoast;
+    img.setAttribute("src", "/Resources/Educational-Games/A-Day-In-The-Life/images/statue-of-liberty.jpg");
+    fadeIn(img,1000);
 } 
 
 //west coast options
 function westCoast() {
-    message.innerHTML = "Pick a state";
-    button1.innerHTML = "California";
-    button2.innerHTML = "Nevada";
-    button3.innerHTML = "Utah";
-    button4.innerHTML = "Arizona";
-    button1.onclick = california;
-    button2.onclick = nevada;
-    button3.onclick = utah;
-    button4.onclick = arizona;
-
+    selectAClub();
+    button1.innerHTML = "The Downbeat";
+    button2.innerHTML = "Dunbar Hotel";
+    button3.innerHTML = "Purcell's";
+    button4.innerHTML = "Club Flamingo";
+    button1.onclick = downbeat;
+    button2.onclick = dunbar;
+    button3.onclick = purcells;
+    button4.onclick = clubFlamingo;
+    img.setAttribute("src", "/Resources/Educational-Games/A-Day-In-The-Life/images/west-coast.jpg");
+    fadeIn(img,1000);
 }
 
-function california() {
-    message.innerHTML = "Pick a city";
-    button1.innerHTML = "Los Angeles";
-    button2.innerHTML = "San Francisco";
-    button3.innerHTML = "Fresno";
-    button4.innerHTML = "San Diego";
-    button1.onclick = la;
-    button2.onclick = sanFran;
-    button3.onclick = fresno;
-    button4.onclick = sanDiego;
-
+function downbeat() {
+    performanceOutcomes();
+    img.setAttribute("src", "/Resources/Educational-Games/A-Day-In-The-Life/images/jazz-club1.jpg");
+    fadeIn(img,1000);
 }
 
-function la() {
-    message.innerHTML = "Welcome to Los Angeles";
-
+function dunbar() {
+    performanceOutcomes();
+    img.setAttribute("src", "/Resources/Educational-Games/A-Day-In-The-Life/images/live-music-sign.jpg");
+    fadeIn(img,1000);
 }
 
-function sanFran() {
-    message.innerHTML = "Welcome to San Francisco";
 
+function purcells(){
+    performanceOutcomes();
+    img.setAttribute("src", "/Resources/Educational-Games/A-Day-In-The-Life/images/piano2.jpg");
+    fadeIn(img,1000);
 }
 
-function fresno() {
-    message.innerHTML = "Welcome to Fresno";
-
+function clubFlamingo() {
+    performanceOutcomes();
+    img.setAttribute("src", "/Resources/Educational-Games/A-Day-In-The-Life/images/piano3.jpg");
+    fadeIn(img,1000);
 }
 
-function sanDiego() {
-    message.innerHTML = "Welcome to San Diego";
-
-}
-
-function nevada() {
-    message.innerHTML = "Pick a city";
-
-}
-
-function utah() {
-    message.innerHTML = "Pick a city";
-
-}
-
-function arizona() {
-    message.innerHTML = "Pick a city";
-
-}
 
 //Midwest options
 function midwest() {
-    message.innerHTML = "Pick a state";
+    selectAClub();
+    button1.innerHTML = "Baker's Keyboard Lounge";
+    button2.innerHTML = "Club DeLisa";
+    button3.innerHTML = "Kelly's Stables";
+    button4.innerHTML = "Friar's Inn";
+    button1.onclick = bakersLounge;
+    button2.onclick = clubDeLisa;
+    button3.onclick = kellysStables;
+    button4.onclick = friarsInn;
+    img.setAttribute("src", "/Resources/Educational-Games/A-Day-In-The-Life/images/midwest.jpg");
+    fadeIn(img,1000);
+}
 
+function bakersLounge() {
+    performanceOutcomes();
+    img.setAttribute("src", "/Resources/Educational-Games/A-Day-In-The-Life/images/jazz-club1.jpg");
+    fadeIn(img,1000);
+}
+
+function clubDeLisa() {
+    performanceOutcomes();
+    img.setAttribute("src", "/Resources/Educational-Games/A-Day-In-The-Life/images/live-music-sign.jpg");
+    fadeIn(img,1000);
+}
+
+
+function kellysStables(){
+    performanceOutcomes();
+    img.setAttribute("src", "/Resources/Educational-Games/A-Day-In-The-Life/images/piano2.jpg");
+    fadeIn(img,1000);
+}
+
+function friarsInn() {
+    performanceOutcomes();
+    img.setAttribute("src", "/Resources/Educational-Games/A-Day-In-The-Life/images/piano3.jpg");
+    fadeIn(img,1000);
 }
 
 // south options
 function south() {
-    message.innerHTML = "Pick a state";
+    selectAClub();
+    button1.innerHTML = "Saenger Theatre";
+    button2.innerHTML = "Tabernacle";
+    button3.innerHTML = "Douglass Theatre";
+    button4.innerHTML = "Carver Theatre";
+    button1.onclick = saengerTheatre;
+    button2.onclick = Tabernacle;
+    button3.onclick = douglassTheatre;
+    button4.onclick = carverTheatre;
+    img.setAttribute("src", "/Resources/Educational-Games/A-Day-In-The-Life/images/south.jpg");
+    fadeIn(img,1000);
+}
 
+function saengerTheatre() {
+    performanceOutcomes();
+    img.setAttribute("src", "/Resources/Educational-Games/A-Day-In-The-Life/images/jazz-club1.jpg");
+    fadeIn(img,1000);
+}
+
+function Tabernacle() {
+    performanceOutcomes();
+    img.setAttribute("src", "/Resources/Educational-Games/A-Day-In-The-Life/images/live-music-sign.jpg");
+    fadeIn(img,1000);
+}
+
+
+function douglassTheatre(){
+    performanceOutcomes();
+    img.setAttribute("src", "/Resources/Educational-Games/A-Day-In-The-Life/images/piano2.jpg");
+    fadeIn(img,1000);
+}
+
+function carverTheatre() {
+    performanceOutcomes();
+    img.setAttribute("src", "/Resources/Educational-Games/A-Day-In-The-Life/images/piano3.jpg");
+    fadeIn(img,1000);
 }
 
 //east coast performance options
 function eastCoast() {
-    message.innerHTML = "Pick a state";
+    selectAClub();
+    button1.innerHTML = "Pearl Theatre";
+    button2.innerHTML = "Harlem Alhambra";
+    button3.innerHTML = "Southland";
+    button4.innerHTML = "Bohemian Caverns";
+    button1.onclick = pearlTheatre;
+    button2.onclick = harlemAlhambra;
+    button3.onclick = southland;
+    button4.onclick = bohemianCaverns;
+    img.setAttribute("src", "/Resources/Educational-Games/A-Day-In-The-Life/images/east-coast.jpg");
+    fadeIn(img,1000);
+}
 
+function pearlTheatre() {
+    performanceOutcomes();
+    img.setAttribute("src", "/Resources/Educational-Games/A-Day-In-The-Life/images/jazz-club1.jpg");
+    fadeIn(img,1000);
+}
+
+function harlemAlhambra() {
+    performanceOutcomes();
+    img.setAttribute("src", "/Resources/Educational-Games/A-Day-In-The-Life/images/live-music-sign.jpg");
+    fadeIn(img,1000);
+}
+
+
+function southland(){
+    performanceOutcomes();
+    img.setAttribute("src", "/Resources/Educational-Games/A-Day-In-The-Life/images/piano2.jpg");
+    fadeIn(img,1000);
+}
+
+function bohemianCaverns() {
+    performanceOutcomes();
+    img.setAttribute("src", "/Resources/Educational-Games/A-Day-In-The-Life/images/piano3.jpg");
+    fadeIn(img,1000);
 }
 
 //local gigs option
 function getGigs() {
+    message.innerHTML = "Choose a club";
+    button1.innerHTML = "Jimmy Ryan's";
+    button2.innerHTML = "Onyx Club";
+    button3.innerHTML = "Famous Door";
+    button4.innerHTML = "Village Vanguard";
+    button1.onclick = jimmmyRyan;
+    button2.onclick = onyx;
+    button3.onclick = famousDoor;
+    button4.onclick = villageVanguard;
+    img.setAttribute("src", "/Resources/Educational-Games/A-Day-In-The-Life/images/nyc-cityscape.jpg");
+    fadeIn(img,1000);
+}
 
+function famousDoor() {
+    performanceOutcomes();
+    img.setAttribute("src", "/Resources/Educational-Games/A-Day-In-The-Life/images/jazz-club1.jpg");
+    fadeIn(img,1000);
+}
+
+function jimmmyRyan() {
+    performanceOutcomes();
+    img.setAttribute("src", "/Resources/Educational-Games/A-Day-In-The-Life/images/live-music-sign.jpg");
+    fadeIn(img,1000);
+}
+
+function onyx(){
+    performanceOutcomes();
+    img.setAttribute("src", "/Resources/Educational-Games/A-Day-In-The-Life/images/piano2.jpg");
+    fadeIn(img,1000);
+}
+
+function villageVanguard() {
+    performanceOutcomes();
+    img.setAttribute("src", "/Resources/Educational-Games/A-Day-In-The-Life/images/piano3.jpg");
+    fadeIn(img,1000);
 }
 
 //teaching function
@@ -180,23 +332,17 @@ function teaching() {
 
     shuffle(teachingResponses);
 
-    let randomNum = Math.floor(Math.random() * teachingResponses.length);
-    let randomMsg = teachingResponses[randomNum];
-
     if(randomMsg === "You were sick and didn't teach this week"){
         message.innerHTML = randomMsg
-        weeks++
-        earnings.innerHTML = `Total earnings after week ${weeks}: $ ${money}`
+        earnings.innerHTML = `Total earnings: $ ${money}`;
     }else if(randomMsg === "You made $5 this week teaching"){
         message.innerHTML = randomMsg
-        weeks++
         money += 5
-        earnings.innerHTML = `Total earnings after week ${weeks}: $ ${money}`
+        earnings.innerHTML = `Total earnings: $ ${money}`;
     }else {
         message.innerHTML = randomMsg
-        weeks++
         money += 10
-        earnings.innerHTML = `Total earnings after week ${weeks}: $ ${money}`
+        earnings.innerHTML = `Total earnings: $ ${money}`;
     }
     img.setAttribute("src", "/Resources/Educational-Games/A-Day-In-The-Life/images/piano.jpg");
     fadeIn(img,1000);
