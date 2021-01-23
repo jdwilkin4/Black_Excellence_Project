@@ -283,6 +283,25 @@ nav .mobile-bars:hover {
     padding: 20px;
 }
 
+/*Footer styles*/
+.footer-container {
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #c74ac7;
+}
+
+.footer-styles { 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links {
+    margin: 10px 0;
+    color: white;
+}
+
 
 /* The learn more class stylings are grouped with the bio titles class styles */
 
