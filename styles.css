@@ -104,19 +104,18 @@ nav .mobile-bars:hover {
     justify-content: space-evenly;
     align-items: center;
     justify-items: center;
-
 }
 
 .hero-img {
     border-radius: 90%;
-    width: 400px;
+    width: 20%;
     max-width: 100%;
     height: auto;
 }
 
 .hero-text {
     text-align: center;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 .female-titles, .male-titles {
@@ -150,8 +149,6 @@ nav .mobile-bars:hover {
 
 .bio-sections {
     margin: 40px 30px;
-    display: flex;
-    align-items: center;
 }
 
 .bio-paragraph {
@@ -159,12 +156,6 @@ nav .mobile-bars:hover {
     line-height: 50px;
 }
 
-.bio-img {
-    border-radius: 50%;
-    max-width: 100%;
-    width: 300px;
-    height: 300px;
-}
 
 /*  ARTIST LINKS AND RESOURCES  */
 
@@ -180,7 +171,6 @@ nav .mobile-bars:hover {
 }
 
 .artist-links {
-    text-decoration: none;
     font-size: 1.4em;
     padding: 20px 10px;
     background-color: #c74ac7;
