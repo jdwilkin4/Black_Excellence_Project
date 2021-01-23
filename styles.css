@@ -273,6 +273,11 @@ nav .mobile-bars:hover {
     padding: 20px;
 }
 
+/* Contact Form styles*/
+.form {
+    margin: 100px 29%;
+}
+
 /*Footer styles*/
 .footer-container {
     padding: 15px;
