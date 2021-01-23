@@ -275,7 +275,8 @@ nav .mobile-bars:hover {
 
 /* Contact Form styles*/
 .form {
-    margin: 100px 29%;
+    display: block;
+    margin: 100px auto;
 }
 
 /*Footer styles*/
