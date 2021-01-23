@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function createBoard(grid, array) { 
     array.forEach((arr, index) => { 
     let img = document.createElement("img"); 
-    img.setAttribute("src", "https://lh3.googleusercontent.com/proxy/6sv2LNyK-kTtsBTCwLvfhFeHgrLhIsS3s15BWSAr6kOTFcZso98V4AqLX1r5Nci_Rf3zNI65L8DL27ZxghQkb8uLTklXmRE");
+    img.setAttribute("src", "/Resources/Educational-Games/Memory-Game/music-notes.png");
     img.setAttribute("data-id", index); 
     grid.appendChild(img); 
     })
@@ -72,8 +72,8 @@ function checkForMatch() {
         scoreBoard.innerHTML = cardsWon; 
         setTimeout(checkWon,500) 
     } else { 
-        imgs[firstCard].setAttribute("src", "https://lh3.googleusercontent.com/proxy/6sv2LNyK-kTtsBTCwLvfhFeHgrLhIsS3s15BWSAr6kOTFcZso98V4AqLX1r5Nci_Rf3zNI65L8DL27ZxghQkb8uLTklXmRE");
-        imgs[secondCard].setAttribute("src", "https://lh3.googleusercontent.com/proxy/6sv2LNyK-kTtsBTCwLvfhFeHgrLhIsS3s15BWSAr6kOTFcZso98V4AqLX1r5Nci_Rf3zNI65L8DL27ZxghQkb8uLTklXmRE"); 
+        imgs[firstCard].setAttribute("src", "/Resources/Educational-Games/Memory-Game/music-notes.png");
+        imgs[secondCard].setAttribute("src", "/Resources/Educational-Games/Memory-Game/music-notes.png"); 
         imgs[firstCard].classList.remove("flip"); imgs[secondCard].classList.remove("flip"); 
     } 
     cardsSelected = []; 
