@@ -273,6 +273,27 @@ nav .mobile-bars:hover {
     padding: 20px;
 }
 
+/*About page*/
+.main-title {
+    margin: 100px auto 20px;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: fit-content;
+    background-color: #c74ac7;
+    color: white;
+    font-size: 2em;
+}
+
+.about-section {
+    line-height: 50px;
+    padding: 20px;
+    margin: 40px;
+    background-color: white;
+    box-shadow: 4px 10px 10px 2px #7d107d;
+    border-radius: 10px;
+}
+
+
 /* Contact Form styles*/
 .form {
     display: block;
