@@ -26,6 +26,28 @@ function mobileNav(){
 
 }
 
+//fadin for homepage title
+let el = document.getElementById("homeTitle");
+
+function fadeIn(el, time) {
+  el.style.opacity = 0;
+
+  let last = +new Date();
+  let tick = function() {
+    el.style.opacity = +el.style.opacity + (new Date() - last) / time;
+    last = +new Date();
+
+    if (+el.style.opacity < 1) {
+      (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
+    }
+  };
+
+  tick();
+}
+
+fadeIn(el, 5000);
+
+
 //footer
 document.getElementById("footer").innerHTML = `
     <footer class="footer-container">

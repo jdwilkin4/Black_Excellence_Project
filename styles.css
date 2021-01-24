@@ -68,13 +68,10 @@ nav .mobile-bars:hover {
 /*  Social Media    */
 .social-btns {
     font-size: 1.5em;
-    position: fixed;
-    right: 10px;
-    top: 50%;
+    margin: 100px 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .fa-facebook {
@@ -93,6 +90,40 @@ nav .mobile-bars:hover {
     color: #ff0000;
 }
 
+/*Home page styles*/
+.home-page-title {
+    background-color:black;
+    border-radius: 5px;
+    box-shadow: 25px 25px 10px 2px #7d107d;    
+    margin: 200px auto;
+    width: 50%;
+    height: 50vh;
+}
+
+#homeTitle {
+    color: white; 
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 3em;
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 90px 0;
+}
+
+.img-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-img {
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.day-in-life-img {
+    width:500px;
+    height:300px;
+}
 
 /* Artist page styles*/
 
@@ -284,7 +315,7 @@ nav .mobile-bars:hover {
     font-size: 2em;
 }
 
-.about-section {
+.about-section, .img-container {
     line-height: 50px;
     padding: 20px;
     margin: 40px;
