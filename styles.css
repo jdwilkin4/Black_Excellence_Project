@@ -25,7 +25,6 @@ body {
 }
 
 /*  Navbar  */
-
 nav {
     top:0;
     position: fixed;
@@ -82,7 +81,6 @@ nav .nav-links:hover:not(:first-child) {
 
 .section-title {
     margin: 100px auto 20px;
-
 }
 
 .section-title, .main-title {
@@ -299,8 +297,6 @@ nav .nav-links:hover:not(:first-child) {
     font-size: 1.2em;
     padding: 20px;
 }
-
-
 
 
 /* Contact Form styles*/
