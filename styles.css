@@ -204,6 +204,13 @@ nav .nav-links:hover:not(:first-child) {
     color: white;
 }
 
+.resources-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /*  Styles for quiz */
 
 .quiz-container {
