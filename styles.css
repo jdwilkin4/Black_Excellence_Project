@@ -33,12 +33,13 @@ nav {
     width: 100%;
 }
 
-nav .nav-links {
+.nav-links {
     display: inline-block;
     border-radius: 5px;
     margin: 10px 5px;
-    padding: 15px 20px;
+    padding: 15px;
     color: #c74ac7;
+    font-size: .8em;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -54,21 +55,7 @@ nav .active {
 nav .nav-links:hover:not(:first-child) {
     background-color: #7d107d;
 }
-
-
-/*  Mobile Navigation  */
-
-/*needs work*/
-nav .mobile-bars {
-    color: #7d107d;
-    display: block;
-}
-
-nav .mobile-bars:hover {
-    color: #c74ac7;
-}
-
-
+  
 
 /*Home page styles*/
 .home-container {
@@ -89,9 +76,17 @@ nav .mobile-bars:hover {
     letter-spacing: 5px;
 }
 
+.main-title {
+    margin: 150px auto 20px;
+}
+
 .section-title {
-    box-shadow: 5px 15px 3px 2px black;
     margin: 100px auto 20px;
+
+}
+
+.section-title, .main-title {
+    box-shadow: 5px 15px 3px 2px black;
     padding: 20px;
     border-radius: 15px;
     max-width: fit-content;
@@ -364,34 +359,8 @@ nav .mobile-bars:hover {
 }
 
 
-/*Media Queries*/
-@media screen and (max-width: 600px) {
-    .nav-bar a:not(:first-child) {
-        display: none;
-    }
-    .nav-bar a.mobile-bars {
-        float: right;
-        display: block;
-    }
-}
 
-@media screen and (max-width: 600px) {
-    .nav-bar.responsive {
-        position: relative;
-    }
 
-    .nav-bar.responsive a.mobile-bars {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .nav-bar.responsive .nav-links {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-}
 
 
 

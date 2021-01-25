@@ -7,21 +7,7 @@ document.getElementById("navMenu").innerHTML = `
     <a class="nav-links" href="/Composers/composers.html">Composers</a>
     <a class="nav-links" href="/Resources/resources.html">Resources</a>
     <a class="nav-links" href="/contact.html">Contact</a>
-    <a href="javascript:void(0);" class="mobile-bars" onclick="mobileNav()">
-        <i class="fas fa-bars"></i>
-    </a>
 </nav> 
 `;
 
 
-// mobile nav bar toggle
-
-function mobileNav(){
-    let toggleBar = document.getElementById("mobile-nav");
-    if (toggleBar.className === "nav-bar") {
-        toggleBar.className += "responsive";
-    } else {
-       toggleBar.className = "nav-bar"; 
-    }
-
-}
