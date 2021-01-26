@@ -356,13 +356,22 @@ nav .nav-links:hover:not(:first-child) {
 }
 
 .footer-links {
-    font-size: .6em;
+    font-size: 1em;
     margin: 10px 0;
     color: white;
 }
 
+@media (max-width: 630px) {
+    .footer-links {
+        font-size: .75em;
+    }
+}
 
-
+@media (max-width: 460px) {
+    .footer-links {
+        font-size: 0.5em;
+    }
+}
 
 
 
