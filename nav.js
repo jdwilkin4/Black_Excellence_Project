@@ -1,6 +1,6 @@
 //main navigation menu
 document.getElementById("navMenu").innerHTML = `
-<nav class="nav-bar" id="mobile-nav">
+<nav class="nav-bar" id="mobile-nav" style="z-index: 1000;">
     <a class="nav-links" href="#logo">BEMP</a>
     <a class="nav-links" id='index-link' href="/index.html">Home</a>
     <a class="nav-links" id='about-link' href="/about.html">About</a>
