@@ -134,6 +134,7 @@ nav .nav-links:hover:not(:first-child) {
 
 .hero-img {
   border-radius: 90%;
+  min-width: 150px;
   width: 20%;
   max-width: 100%;
   height: auto;
@@ -157,29 +158,6 @@ nav .nav-links:hover:not(:first-child) {
 
 .male-titles {
   font-family: "Righteous", cursive;
-}
-
-/*  BIO SECTION  */
-
-.bio-titles,
-.learn-more {
-  border-radius: 5px;
-  margin: 0 auto;
-  max-width: fit-content;
-  text-align: center;
-  background-color: rgb(189, 64, 189);
-  color: white;
-  padding: 10px;
-  font-size: 2em;
-}
-
-.bio-sections {
-  margin: 40px 30px;
-}
-
-.bio-paragraph {
-  margin: 0 25px;
-  line-height: 50px;
 }
 
 /*  ARTIST LINKS AND RESOURCES  */
