@@ -1,4 +1,4 @@
-document.getElementById("footer").innerHTML = `
+document.getElementById('footer').innerHTML = `
     <footer class="footer-container">
             <a class="footer-links" href="/about.html">About Us</a>
             <a class="footer-links" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=FIWELCEBG0E&list=PLqHdMZJ08WM11cAx7YqdmvHb5YawvM0sq" target="_blank">Black Excellence Series</a>
@@ -7,4 +7,4 @@ document.getElementById("footer").innerHTML = `
             <a class="footer-links" href="/Resources/Educational-Games/Quizzes/duke-quiz.html">Duke Ellington Quiz</a>
             <a class="footer-links" href="/Resources/Educational-Games/Quizzes/eleanor-quiz.html">Eleanor Alberga Quiz</a>
     </footer>
-` 
+`;

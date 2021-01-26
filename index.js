@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-expressions */
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-shadow */
+
 // fadin for homepage title
 const el = document.getElementById('home-title');
 

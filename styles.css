@@ -9,8 +9,6 @@
 /* Righteous google font used for male artist pages */
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
-/*Mobile first approach*/
-
 /*  CSS Reset */
 * {
   margin: 0;
@@ -22,9 +20,6 @@
 body {
   font-family: "Lato", sans-serif;
   font-size: 20px;
-  opacity: 1;
-  transition-duration: 3.5s;
-  transition-property: opacity;
 }
 
 body.fade {
