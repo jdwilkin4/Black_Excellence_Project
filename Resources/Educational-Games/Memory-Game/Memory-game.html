@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Black Excellence Memory Game</title>
-        <!--Main Stylesheet-->
-        <link rel="stylesheet" href="/styles.css">
-        <!--Memory game stylesheet-->
-        <link rel="stylesheet" href="/Resources/Educational-Games/Memory-Game/Memory-game.css">
-    </head>
-    <body>
-        <!--    MAIN NAVIGATION   -->
-        <nav id="navMenu"></nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black Excellence Memory Game</title>
+    <!--Main Stylesheet-->
+    <link rel="stylesheet" href="/styles.css" />
+    <!--Memory game stylesheet-->
+    <link
+      rel="stylesheet"
+      href="/Resources/Educational-Games/Memory-Game/Memory-game.css"
+    />
+  </head>
+  <body>
+    <!--    MAIN NAVIGATION   -->
+    <nav id="navMenu"></nav>
 
-        <h1 class="main-title">Can you find the matches?</h1>
+    <h1 class="main-title">Can you find the matches?</h1>
 
-        <p id="winner-msg"></p>
+    <div class="container">
+      <div class="data">
+        <div class="score">Score : <span class="scoreBoard">0</span></div>
+        <div class="click">Attempts : <span class="clickBoard">0</span></div>
+      </div>
+      <div class="grid"></div>
+      <p class="custom-btn" id='custom-btn'>Reset</p>
+    </div>
+    <footer id="footer"></footer>
 
-        <div class="container">
-            <div class="data">
-              <div class="score">Score : <span class="scoreBoard">0</span></div>
-              <div class="click">Attempts : <span class="clickBoard">0</span></div>
-            </div>
-            <div class="grid"></div>
-        </div>
-        <footer id="footer"></footer>
-
-        <script src="/nav.js"></script>
-        <script src="/footer.js"></script>
-        <script src="/Resources/Educational-Games/Memory-Game/Memory-game.js"></script>
-    </body>
+    <script src="/nav.js"></script>
+    <script src="/footer.js"></script>
+    <script src="/Resources/Educational-Games/Memory-Game/Memory-game.js"></script>
+  </body>
 </html>

@@ -40,7 +40,8 @@ function createBoard(grid, array) {
     array.forEach((arr, index) => { 
     let img = document.createElement("img"); 
     img.setAttribute("src", "/Resources/Educational-Games/Memory-Game/music-notes.png");
-    img.setAttribute("data-id", index); 
+    img.setAttribute("data-id", index);
+    img.addEventListener("click", flipCard) 
     grid.appendChild(img); 
     })
 }
@@ -98,3 +99,6 @@ function replay() {
     clickBoard.innerHTML = 0; 
     scoreBoard.innerHTML = 0; 
 }
+
+const button = document.getElementById('custom-btn');
+button.addEventListener('click', replay)
