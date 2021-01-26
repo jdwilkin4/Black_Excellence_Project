@@ -1,0 +1,27 @@
+{
+  "name": "black_excellence_project",
+  "version": "1.0.0",
+  "description": "Black Excellence Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdwilkin4/Black_Excellence_Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdwilkin4/Black_Excellence_Project/issues"
+  },
+  "homepage": "https://github.com/jdwilkin4/Black_Excellence_Project#readme",
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1"
+  }
+}
