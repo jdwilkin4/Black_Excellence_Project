@@ -97,10 +97,10 @@ function goHome() {
     earnings.innerHTML = `Total earnings: $ ${money}`;
     img.setAttribute("src", "/Resources/Educational-Games/A-Day-In-The-Life/images/new-york-cityscape.jpg");
     fadeIn(img,1000);
-    button1.innerHTML = "Go on Tour";
-    button2.innerHTML = "Local gigs";
+    button1.innerHTML = "Tour";
+    button2.innerHTML = "Local";
     button3.innerHTML = "Teaching";
-    button4.innerHTML = "Higher Education";
+    button4.innerHTML = "School";
     button1.onclick = goOnTour;
     button2.onclick = getGigs;
     button3.onclick = teaching;
@@ -110,10 +110,10 @@ function goHome() {
 //tour buttons
 function goOnTour() {
     message.innerHTML = "Where would you like to tour?"
-    button1.innerHTML = "West Coast";
+    button1.innerHTML = "West";
     button2.innerHTML = "Midwest";
     button3.innerHTML = "South";
-    button4.innerHTML = "East Coast";
+    button4.innerHTML = "East";
     button1.onclick = westCoast;
     button2.onclick = midwest;
     button3.onclick = south;
@@ -127,7 +127,7 @@ function westCoast() {
     selectAClub();
     button1.innerHTML = "The Downbeat";
     button2.innerHTML = "Dunbar Hotel";
-    button3.innerHTML = "Purcell's";
+    button3.innerHTML = "Purcell's Venue";
     button4.innerHTML = "Club Flamingo";
     button1.onclick = downbeat;
     button2.onclick = dunbar;
@@ -166,7 +166,7 @@ function clubFlamingo() {
 //Midwest options
 function midwest() {
     selectAClub();
-    button1.innerHTML = "Baker's Keyboard Lounge";
+    button1.innerHTML = "Baker's Lounge";
     button2.innerHTML = "Club DeLisa";
     button3.innerHTML = "Kelly's Stables";
     button4.innerHTML = "Friar's Inn";
@@ -207,7 +207,7 @@ function friarsInn() {
 function south() {
     selectAClub();
     button1.innerHTML = "Saenger Theatre";
-    button2.innerHTML = "Tabernacle";
+    button2.innerHTML = "Tabernacle Venue";
     button3.innerHTML = "Douglass Theatre";
     button4.innerHTML = "Carver Theatre";
     button1.onclick = saengerTheatre;
@@ -248,7 +248,7 @@ function eastCoast() {
     selectAClub();
     button1.innerHTML = "Pearl Theatre";
     button2.innerHTML = "Harlem Alhambra";
-    button3.innerHTML = "Southland";
+    button3.innerHTML = "Southland Venue";
     button4.innerHTML = "Bohemian Caverns";
     button1.onclick = pearlTheatre;
     button2.onclick = harlemAlhambra;

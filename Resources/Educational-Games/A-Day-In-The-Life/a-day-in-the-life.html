@@ -10,29 +10,41 @@
         <link rel="stylesheet" href="/styles.css">
     </head>
     <body>
-        <!--    MAIN NAVIGATION   -->
         <nav id="navMenu"></nav>
 
         <header>
-            <h1 class="main-title">A day in the Life of a black artist</h1>
-            <p>Welcome to 1930's America</p>
-            <p>Explore your options below as an emerging black pianist/composer based in New York City</p>
+            <h1 class="main-title">A Day in the Life</h1>
+            <p>Welcome to 1930's New York City</p>
+            <p>Occupation: Black pianist/composer</p>
         </header>
 
         <main class="container">
-            <p id="message">Welcome home!</p>
+            <p id="message">What would you like to do today?</p>
             <p id="earnings">Total earnings $0</p>
             <img id="img" src="/Resources/Educational-Games/A-Day-In-The-Life/images/new-york-cityscape.jpg" alt="Picture of New York">
+
             <div class="btn-row">
-                <button id="home">Home</button>
-                <button id="btn1">Go on Tour</button>
-                <button id="btn2">Local gigs</button>
-                <button id="btn3">Teaching</button>
-                <button id="btn4">Higher Education</button>
-            </div>
+                <div class="btn-column">
+                    <button id="home">Home</button>
+                </div>
+              
+                <div class="btn-column">
+                    <button id="btn1">Tour</button>
+                    <button id="btn2">Local</button>
+                </div>
+
+                <div class="btn-column">
+                    <button id="btn3">Teaching</button>
+                    <button id="btn4">School</button>  
+                </div>
+              
+            </div> 
         </main>
+
         <footer id="footer"></footer>
-        <script src="/index.js"></script>
+
+        <script src="/nav.js"></script>
+        <script src="/footer.js"></script>
         <script src="/Resources/Educational-Games/A-Day-In-The-Life/a-day-in-the-life.js"></script>
     </body>
 </html>

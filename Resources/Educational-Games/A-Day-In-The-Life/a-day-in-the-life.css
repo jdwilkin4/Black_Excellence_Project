@@ -1,25 +1,7 @@
-/*  Lato Font for body  */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-
-body {
-    font-family: 'Lato', sans-serif;
-}
-
-.main-title {
-    box-shadow: 10px 5px 5px #7d107d;
-    margin: 9% auto 3%;
-    text-align: center;
-    padding: 2%;  
-    max-width: fit-content;
-    border-radius: 10px;
-    color: white;
-    background-color: #c74ac7;
-}
-
 p {
-    margin: 2% 0;
+    margin: 6% 0;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 img {
@@ -32,7 +14,7 @@ img {
 }
 
 .container {
-    width: 80%;
+    width: 70%;
     box-shadow: 5px 5px 5px #c74ac7;
     margin: 3% auto;
     border: 3px solid #c74ac7;
@@ -40,19 +22,39 @@ img {
 }
 
 .btn-row {
-    padding: 3%;
+    margin: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+.btn-column {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
 }
 
 button {
     cursor: pointer;
     box-shadow: 15px 5px 5px #7d107d;
+    margin: 10px;
     padding: 10px;
     border-radius: 15px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     background-color: #c74ac7;
     color: white;
     border: none;
+}
+
+@media(max-width:775px){
+    img {
+        width: 150px;
+        height: 150px;
+    }
+
+    button {
+        font-size: 1.1rem;
+    }
 }
 
