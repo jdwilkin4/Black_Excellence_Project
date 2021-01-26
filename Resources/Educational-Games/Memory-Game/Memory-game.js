@@ -11,21 +11,21 @@ let clicks = 0;
 
 
 let cardArray = [ 
-    { name: "Duke Ellington", img: "/Composers/Duke-Ellington/duke-images/duke-profile.jpg", }, 
-    { name: "Duke Ellington", img: "/Composers/Duke-Ellington/duke-images/duke-profile.jpg", },
-    { name: "Eleanor Alberga", img: "/Composers/Eleanor-Alberga/eleanor-images/eleanor-alberga-1.jpg", },
-    { name: "Eleanor Alberga", img: "/Composers/Eleanor-Alberga/eleanor-images/eleanor-alberga-1.jpg", }, 
-    { name: "Eubie Blake", img: "/Composers/Eubie-Blake/eubie-images/eubie-blake-profile.jpg", },
-    { name: "Eubie Blake", img: "/Composers/Eubie-Blake/eubie-images/eubie-blake-profile.jpg", }, 
-    { name: "Florence Price", img: "/Composers/Florence-Price/florence-images/Price-color.png", },
-    { name: "Florence Price", img: "/Composers/Florence-Price/florence-images/Price-color.png", },
-    { name: "Francis B. Johnson", img: "/Composers/Francis-B-Johnson/francis-images/francis-johnson-profile.jpg", },
-    { name: "Francis B. Johnson", img: "/Composers/Francis-B-Johnson/francis-images/francis-johnson-profile.jpg", },
-    { name: "Margaret Bonds", img: "/Composers/Margaret-Bonds/margaret-images/Margaret-Bonds.jpg", },
-    { name: "Margaret Bonds", img: "/Composers/Margaret-Bonds/margaret-images/Margaret-Bonds.jpg", }, 
+    { name: "Duke Ellington", img: "/Composers/Duke-Ellington/duke-profile.jpg", }, 
+    { name: "Duke Ellington", img: "/Composers/Duke-Ellington/duke-profile.jpg", },
+    { name: "Eleanor Alberga", img: "/Composers/Eleanor-Alberga/eleanor-alberga-1.jpg", },
+    { name: "Eleanor Alberga", img: "/Composers/Eleanor-Alberga/eleanor-alberga-1.jpg", }, 
+    { name: "Eubie Blake", img: "/Composers/Eubie-Blake/eubie-blake-profile.jpg", },
+    { name: "Eubie Blake", img: "/Composers/Eubie-Blake/eubie-blake-profile.jpg", }, 
+    { name: "Florence Price", img: "/Composers/Florence-Price/Price-color.png", },
+    { name: "Florence Price", img: "/Composers/Florence-Price/Price-color.png", },
+    { name: "Francis B. Johnson", img: "/Composers/Francis-B-Johnson/francis-johnson-profile.jpg", },
+    { name: "Francis B. Johnson", img: "/Composers/Francis-B-Johnson/francis-johnson-profile.jpg", },
+    { name: "Margaret Bonds", img: "/Composers/Margaret-Bonds/Margaret-Bonds.jpg", },
+    { name: "Margaret Bonds", img: "/Composers/Margaret-Bonds/Margaret-Bonds.jpg", }, 
 ]; 
 
-
+//add event listeners to each image
 document.addEventListener("DOMContentLoaded", function () {
     createBoard(grid, cardArray); 
     arrangeCard();
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ) 
 });
 
-
+//create the game board 
 function createBoard(grid, array) { 
     array.forEach((arr, index) => { 
     let img = document.createElement("img"); 
@@ -45,7 +45,7 @@ function createBoard(grid, array) {
     })
 }
 
-
+//randomly sort cards after each game
 function arrangeCard() { 
     cardArray.sort(() => 0.5 - Math.random())
 }
@@ -74,7 +74,8 @@ function checkForMatch() {
     } else { 
         imgs[firstCard].setAttribute("src", "/Resources/Educational-Games/Memory-Game/music-notes.png");
         imgs[secondCard].setAttribute("src", "/Resources/Educational-Games/Memory-Game/music-notes.png"); 
-        imgs[firstCard].classList.remove("flip"); imgs[secondCard].classList.remove("flip"); 
+        imgs[firstCard].classList.remove("flip"); 
+        imgs[secondCard].classList.remove("flip"); 
     } 
     cardsSelected = []; 
     cardsId = []; 
