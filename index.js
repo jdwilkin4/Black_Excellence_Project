@@ -1,11 +1,14 @@
-//fadin for homepage title
-let el = document.getElementById("home-title");
+/* eslint-disable no-unused-expressions */
+/* eslint-disable no-param-reassign */
+/* eslint-disable no-shadow */
+// fadin for homepage title
+const el = document.getElementById('home-title');
 
 const fadeIn = (el, time) => {
   el.style.opacity = 0;
 
   let last = +new Date();
-  let tick = () => {
+  const tick = () => {
     el.style.opacity = +el.style.opacity + (new Date() - last) / time;
     last = +new Date();
 
@@ -15,9 +18,6 @@ const fadeIn = (el, time) => {
   };
 
   tick();
-}
+};
 
 fadeIn(el, 5000);
-
-
-

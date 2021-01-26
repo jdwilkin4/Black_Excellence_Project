@@ -22,6 +22,13 @@
 body {
   font-family: "Lato", sans-serif;
   font-size: 20px;
+  opacity: 1;
+  transition-duration: 3.5s;
+  transition-property: opacity;
+}
+
+body.fade {
+  opacity: 0;
 }
 
 /*  Navbar  */
@@ -37,7 +44,7 @@ nav {
   border-radius: 5px;
   margin: 10px 5px;
   padding: 15px;
-  color: rgb(189, 64, 189);;
+  color: rgb(189, 64, 189);
   font-size: 0.8em;
   text-decoration: none;
   text-transform: uppercase;
@@ -49,7 +56,7 @@ nav a:hover:not(:first-child) {
 }
 
 nav .active {
-  background-color: rgb(189, 64, 189);;
+  background-color: rgb(189, 64, 189);
 }
 
 nav .nav-links:hover:not(:first-child) {
@@ -89,7 +96,7 @@ nav .nav-links:hover:not(:first-child) {
   padding: 20px;
   border-radius: 15px;
   max-width: fit-content;
-  background-color: rgb(189, 64, 189);;
+  background-color: rgb(189, 64, 189);
   color: white;
   font-size: 1.7em;
 }
@@ -144,7 +151,7 @@ nav .nav-links:hover:not(:first-child) {
 
 .female-titles,
 .male-titles {
-  color: rgb(189, 64, 189);;
+  color: rgb(189, 64, 189);
   letter-spacing: 3px;
   display: block;
 }
@@ -165,7 +172,7 @@ nav .nav-links:hover:not(:first-child) {
   margin: 0 auto;
   max-width: fit-content;
   text-align: center;
-  background-color: rgb(189, 64, 189);;
+  background-color: rgb(189, 64, 189);
   color: white;
   padding: 10px;
   font-size: 2em;
@@ -196,7 +203,7 @@ nav .nav-links:hover:not(:first-child) {
 .artist-links {
   font-size: 1.4em;
   padding: 20px 10px;
-  background-color: rgb(189, 64, 189);;
+  background-color: rgb(189, 64, 189);
   margin: 15px;
   border-radius: 5px;
   color: white;
@@ -237,7 +244,7 @@ nav .nav-links:hover:not(:first-child) {
   color: white;
   font-weight: 700;
   font-size: 1.2em;
-  background-color: rgb(189, 64, 189);;
+  background-color: rgb(189, 64, 189);
   max-width: fit-content;
   margin: 0 auto;
   padding: 10px;
@@ -285,7 +292,7 @@ nav .nav-links:hover:not(:first-child) {
 }
 
 #answer-key {
-  background-color: rgb(189, 64, 189);;
+  background-color: rgb(189, 64, 189);
   color: white;
   font-size: 1.1em;
   margin: 10px 0;
