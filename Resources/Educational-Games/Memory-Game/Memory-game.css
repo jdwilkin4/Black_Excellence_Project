@@ -12,7 +12,7 @@ h1, p {
     width: 100%; 
     /*height: 20%; */
     /*margin: 50px 200px 190px; */
-    margin-bottom: 200px;
+    margin-bottom: 20px;
 } 
     
 .grid img { 
@@ -52,6 +52,21 @@ h1, p {
 .data span { 
     color:#7d107d;
     font-size: 30px; 
+}
+
+.custom-btn {
+    cursor: pointer;
+    box-shadow: 15px 5px 5px #7d107d;
+    margin: auto;
+    margin-bottom: 100px;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    background-color: #c74ac7;
+    color: white;
+    border: none;
+    width: 50vw;
+    max-width: 500px;
 }
 
 #navMenu {
