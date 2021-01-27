@@ -77,12 +77,9 @@ nav .nav-links:hover:not(:first-child) {
   letter-spacing: 5px;
 }
 
+
 .main-title {
   margin: 150px auto 20px;
-}
-
-
-.main-title {
   box-shadow: 5px 15px 3px 2px black;
   padding: 20px;
   border-radius: 15px;
@@ -130,9 +127,8 @@ nav .nav-links:hover:not(:first-child) {
 
 .hero-img {
   border-radius: 90%;
-  min-width: 200px;
-  width: 20%;
-  max-width: 100%;
+  min-width: 100px;
+  max-width: 23%;
   height: auto;
 }
 
@@ -328,9 +324,21 @@ nav .nav-links:hover:not(:first-child) {
   color: white;
 }
 
+@media (max-width: 680px){
+  .hero-img {
+    display: none;
+  }
+}
+
 @media (max-width: 630px) {
   .footer-container {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 500px){
+  .main-title {
+    font-size: 1.2em;
   }
 }
 
