@@ -81,11 +81,7 @@ nav .nav-links:hover:not(:first-child) {
   margin: 150px auto 20px;
 }
 
-.section-title {
-  margin: 100px auto 20px;
-}
 
-.section-title,
 .main-title {
   box-shadow: 5px 15px 3px 2px black;
   padding: 20px;
@@ -134,7 +130,7 @@ nav .nav-links:hover:not(:first-child) {
 
 .hero-img {
   border-radius: 90%;
-  min-width: 150px;
+  min-width: 200px;
   width: 20%;
   max-width: 100%;
   height: auto;
