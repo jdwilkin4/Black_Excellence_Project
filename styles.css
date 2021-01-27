@@ -324,7 +324,7 @@ nav .nav-links:hover:not(:first-child) {
   color: white;
 }
 
-@media (max-width: 680px){
+@media (max-width: 700px){
   .hero-img {
     display: none;
   }
