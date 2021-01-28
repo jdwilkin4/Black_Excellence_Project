@@ -18,8 +18,8 @@ h1, p {
 .grid img { 
     box-shadow: 4px 4px 10px 2px #7d107d;
     cursor: pointer;
-    width: 250px;
-    height:200px;
+    width: 150px;
+    height:100px;
     margin: 2px; 
     transform-style: preserve-3d; 
     transition: transform 0.5s; 
@@ -28,19 +28,7 @@ h1, p {
 .grid img.flip { 
     transform: rotateY(180deg); 
 } 
-    
-.popup { 
-    background: red; 
-    width: 200px; 
-    height: 200px; 
-    position: fixed;
-    z-index: 20;
-    top: 100px;
-    left: 100px; display: flex;
-    justify-content: center; 
-    align-items: center; 
-    flex-direction: column;
-}
+  
     
 .data { 
     display: flex; 

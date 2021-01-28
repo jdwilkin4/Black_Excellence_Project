@@ -10,19 +10,23 @@ let cardsWon = 0;
 let clicks = 0;
 
 
-let cardArray = [ 
-    { name: "Duke Ellington", img: "/Composers/Duke-Ellington/duke-profile.jpg", }, 
-    { name: "Duke Ellington", img: "/Composers/Duke-Ellington/duke-profile.jpg", },
-    { name: "Eleanor Alberga", img: "/Composers/Eleanor-Alberga/eleanor-alberga-1.jpg", },
-    { name: "Eleanor Alberga", img: "/Composers/Eleanor-Alberga/eleanor-alberga-1.jpg", }, 
-    { name: "Eubie Blake", img: "/Composers/Eubie-Blake/eubie-blake-profile.jpg", },
-    { name: "Eubie Blake", img: "/Composers/Eubie-Blake/eubie-blake-profile.jpg", }, 
-    { name: "Florence Price", img: "/Composers/Florence-Price/Price-color.png", },
-    { name: "Florence Price", img: "/Composers/Florence-Price/Price-color.png", },
-    { name: "Francis B. Johnson", img: "/Composers/Francis-B-Johnson/francis-johnson-profile.jpg", },
-    { name: "Francis B. Johnson", img: "/Composers/Francis-B-Johnson/francis-johnson-profile.jpg", },
-    { name: "Margaret Bonds", img: "/Composers/Margaret-Bonds/Margaret-Bonds.jpg", },
-    { name: "Margaret Bonds", img: "/Composers/Margaret-Bonds/Margaret-Bonds.jpg", }, 
+let cardArray = [
+  { name: "Nina Simone", img: "/Composers/Nina-Simone/nina-profile.jpg", }, 
+  { name: "Nina Simone", img: "/Composers/Nina-Simone/nina-profile.jpg", }, 
+  { name: "Harry Burleigh", img: "/Composers/Harry-Burleigh/harry-burleigh.jpeg", }, 
+  { name: "Harry Burleigh", img: "/Composers/Harry-Burleigh/harry-burleigh.jpeg", },
+  { name: "Duke Ellington", img: "/Composers/Duke-Ellington/duke-profile.jpg", }, 
+  { name: "Duke Ellington", img: "/Composers/Duke-Ellington/duke-profile.jpg", },
+  { name: "Eleanor Alberga", img: "/Composers/Eleanor-Alberga/eleanor-alberga-1.jpg", },
+  { name: "Eleanor Alberga", img: "/Composers/Eleanor-Alberga/eleanor-alberga-1.jpg", }, 
+  { name: "Eubie Blake", img: "/Composers/Eubie-Blake/eubie-blake-profile.jpg", },
+  { name: "Eubie Blake", img: "/Composers/Eubie-Blake/eubie-blake-profile.jpg", }, 
+  { name: "Florence Price", img: "/Composers/Florence-Price/Price-color.png", },
+  { name: "Florence Price", img: "/Composers/Florence-Price/Price-color.png", },
+  { name: "Francis B. Johnson", img: "/Composers/Francis-B-Johnson/francis-johnson-profile.jpg", },
+  { name: "Francis B. Johnson", img: "/Composers/Francis-B-Johnson/francis-johnson-profile.jpg", },
+  { name: "Margaret Bonds", img: "/Composers/Margaret-Bonds/Margaret-Bonds.jpg", },
+  { name: "Margaret Bonds", img: "/Composers/Margaret-Bonds/Margaret-Bonds.jpg", }, 
 ]; 
 
 //add event listeners to each image
