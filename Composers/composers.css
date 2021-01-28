@@ -1,0 +1,27 @@
+h2 {
+    font-size: 1.2em;
+    text-align: center; 
+    margin: 50px 0;
+}
+
+table {
+    margin: 100px auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    padding: 20px;
+    border: 3px solid #7d107d;
+}
+
+td {
+    text-align: center;
+}
+
+a {
+    color: blue;
+}
+
+.composer-link {
+    font-size: .9em;
+}
