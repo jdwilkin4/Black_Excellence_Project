@@ -2,11 +2,11 @@
 document.getElementById('navMenu').innerHTML = `
 <nav class="nav-bar">
     <a class="nav-links" href="#logo">BEMP</a>
-    <a class="nav-links" id='index-link' href="/index.html">Home</a>
-    <a class="nav-links" id='about-link' href="/about.html">About</a>
+    <a class="nav-links" id='index-link' href="index.html">Home</a>
+    <a class="nav-links" id='about-link' href="about.html">About</a>
     <a class="nav-links" id='composers-link' href="/Composers/composers.html">Composers</a>
     <a class="nav-links" id='resources-link' href="/Resources/resources.html">Resources</a>
-    <a class="nav-links" id='contact-link' href="/contact.html">Contact</a>
+    <a class="nav-links" id='contact-link' href="contact.html">Contact</a>
 </nav> 
 `;
 /**

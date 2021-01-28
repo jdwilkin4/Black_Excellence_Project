@@ -11,22 +11,22 @@ let clicks = 0;
 
 
 let cardArray = [
-  { name: "Nina Simone", img: "/Composers/Nina-Simone/nina-profile.jpg", alt:"Nina Simone Picture" }, 
-  { name: "Nina Simone", img: "/Composers/Nina-Simone/nina-profile.jpg", alt:"Nina Simone Picture" }, 
-  { name: "Harry Burleigh", img: "/Composers/Harry-Burleigh/harry-burleigh.jpeg", alt:"Harry Burleigh Picture" }, 
-  { name: "Harry Burleigh", img: "/Composers/Harry-Burleigh/harry-burleigh.jpeg", alt:"Harry Burleigh Picture" },
-  { name: "Duke Ellington", img: "/Composers/Duke-Ellington/duke-profile.jpg", alt:"Duke Ellington Picture" }, 
-  { name: "Duke Ellington", img: "/Composers/Duke-Ellington/duke-profile.jpg", alt:"Duke Ellington Picture" },
-  { name: "Eleanor Alberga", img: "/Composers/Eleanor-Alberga/eleanor-alberga-1.jpg", alt:"Eleanor Alberga Picture" },
-  { name: "Eleanor Alberga", img: "/Composers/Eleanor-Alberga/eleanor-alberga-1.jpg", alt:"Eleanor Alberga Picture" }, 
-  { name: "Eubie Blake", img: "/Composers/Eubie-Blake/eubie-blake-profile.jpg", alt:"Eubie Blake Picture" },
-  { name: "Eubie Blake", img: "/Composers/Eubie-Blake/eubie-blake-profile.jpg", alt:"Eubie Blake Picture" }, 
-  { name: "Florence Price", img: "/Composers/Florence-Price/Price-color.png", alt:"Florence Price Picture" },
-  { name: "Florence Price", img: "/Composers/Florence-Price/Price-color.png", alt:"Florence Price Picture" },
-  { name: "Francis B. Johnson", img: "/Composers/Francis-B-Johnson/francis-johnson-profile.jpg", alt:"Francis B. Johnson Picture" },
-  { name: "Francis B. Johnson", img: "/Composers/Francis-B-Johnson/francis-johnson-profile.jpg", alt:"Francis B. Johnson Picture" },
-  { name: "Margaret Bonds", img: "/Composers/Margaret-Bonds/Margaret-Bonds.jpg", alt:"Margaret Bonds Picture" },
-  { name: "Margaret Bonds", img: "/Composers/Margaret-Bonds/Margaret-Bonds.jpg", alt:"Margaret Bonds Picture"  }, 
+  { name: "Nina Simone", img: "Composers/Nina-Simone/nina-profile.jpg", alt:"Nina Simone Picture" }, 
+  { name: "Nina Simone", img: "Composers/Nina-Simone/nina-profile.jpg", alt:"Nina Simone Picture" }, 
+  { name: "Harry Burleigh", img: "Composers/Harry-Burleigh/harry-burleigh.jpeg", alt:"Harry Burleigh Picture" }, 
+  { name: "Harry Burleigh", img: "Composers/Harry-Burleigh/harry-burleigh.jpeg", alt:"Harry Burleigh Picture" },
+  { name: "Duke Ellington", img: "Composers/Duke-Ellington/duke-profile.jpg", alt:"Duke Ellington Picture" }, 
+  { name: "Duke Ellington", img: "Composers/Duke-Ellington/duke-profile.jpg", alt:"Duke Ellington Picture" },
+  { name: "Eleanor Alberga", img: "Composers/Eleanor-Alberga/eleanor-alberga-1.jpg", alt:"Eleanor Alberga Picture" },
+  { name: "Eleanor Alberga", img: "Composers/Eleanor-Alberga/eleanor-alberga-1.jpg", alt:"Eleanor Alberga Picture" }, 
+  { name: "Eubie Blake", img: "Composers/Eubie-Blake/eubie-blake-profile.jpg", alt:"Eubie Blake Picture" },
+  { name: "Eubie Blake", img: "Composers/Eubie-Blake/eubie-blake-profile.jpg", alt:"Eubie Blake Picture" }, 
+  { name: "Florence Price", img: "Composers/Florence-Price/Price-color.png", alt:"Florence Price Picture" },
+  { name: "Florence Price", img: "Composers/Florence-Price/Price-color.png", alt:"Florence Price Picture" },
+  { name: "Francis B. Johnson", img: "Composers/Francis-B-Johnson/francis-johnson-profile.jpg", alt:"Francis B. Johnson Picture" },
+  { name: "Francis B. Johnson", img: "Composers/Francis-B-Johnson/francis-johnson-profile.jpg", alt:"Francis B. Johnson Picture" },
+  { name: "Margaret Bonds", img: "Composers/Margaret-Bonds/Margaret-Bonds.jpg", alt:"Margaret Bonds Picture" },
+  { name: "Margaret Bonds", img: "Composers/Margaret-Bonds/Margaret-Bonds.jpg", alt:"Margaret Bonds Picture"  }, 
 ]; 
 
 //add event listeners to each image
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function createBoard(grid, array) { 
     array.forEach((arr, index) => { 
     let img = document.createElement("img"); 
-    img.setAttribute("src", "/Resources/Educational-Games/Memory-Game/music-notes.png");
+    img.setAttribute("src", "Resources/Educational-Games/Memory-Game/music-notes.png");
     img.setAttribute("data-id", index);
     img.addEventListener("click", flipCard) 
     grid.appendChild(img); 
@@ -77,8 +77,8 @@ function checkForMatch() {
         scoreBoard.innerHTML = cardsWon; 
         setTimeout(checkWon,500) 
     } else { 
-        imgs[firstCard].setAttribute("src", "/Resources/Educational-Games/Memory-Game/music-notes.png");
-        imgs[secondCard].setAttribute("src", "/Resources/Educational-Games/Memory-Game/music-notes.png"); 
+        imgs[firstCard].setAttribute("src", "Resources/Educational-Games/Memory-Game/music-notes.png");
+        imgs[secondCard].setAttribute("src", "Resources/Educational-Games/Memory-Game/music-notes.png"); 
         imgs[firstCard].classList.remove("flip"); 
         imgs[secondCard].classList.remove("flip"); 
     } 

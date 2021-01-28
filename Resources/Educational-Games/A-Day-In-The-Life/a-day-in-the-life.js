@@ -102,25 +102,25 @@ function selectAClub() {
 
 function downbeat() {
   performanceOutcomes();
-  img.setAttribute('src', '/Resources/Educational-Games/A-Day-In-The-Life/images/jazz-club1.jpg');
+  img.setAttribute('src', 'Resources/Educational-Games/A-Day-In-The-Life/images/jazz-club1.jpg');
   fadeIn(img, 1000);
 }
 
 function dunbar() {
   performanceOutcomes();
-  img.setAttribute('src', '/Resources/Educational-Games/A-Day-In-The-Life/images/live-music-sign.jpg');
+  img.setAttribute('src', 'Resources/Educational-Games/A-Day-In-The-Life/images/live-music-sign.jpg');
   fadeIn(img, 1000);
 }
 
 function purcells() {
   performanceOutcomes();
-  img.setAttribute('src', '/Resources/Educational-Games/A-Day-In-The-Life/images/piano2.jpg');
+  img.setAttribute('src', 'Resources/Educational-Games/A-Day-In-The-Life/images/piano2.jpg');
   fadeIn(img, 1000);
 }
 
 function clubFlamingo() {
   performanceOutcomes();
-  img.setAttribute('src', '/Resources/Educational-Games/A-Day-In-The-Life/images/piano3.jpg');
+  img.setAttribute('src', 'Resources/Educational-Games/A-Day-In-The-Life/images/piano3.jpg');
   fadeIn(img, 1000);
 }
 
@@ -135,7 +135,7 @@ function westCoast() {
   button2.onclick = dunbar;
   button3.onclick = purcells;
   button4.onclick = clubFlamingo;
-  img.setAttribute('src', '/Resources/Educational-Games/A-Day-In-The-Life/images/west-coast.jpg');
+  img.setAttribute('src', 'Resources/Educational-Games/A-Day-In-The-Life/images/west-coast.jpg');
   fadeIn(img, 1000);
 }
 
@@ -143,25 +143,25 @@ function westCoast() {
 
 function bakersLounge() {
   performanceOutcomes();
-  img.setAttribute('src', '/Resources/Educational-Games/A-Day-In-The-Life/images/jazz-club1.jpg');
+  img.setAttribute('src', 'Resources/Educational-Games/A-Day-In-The-Life/images/jazz-club1.jpg');
   fadeIn(img, 1000);
 }
 
 function clubDeLisa() {
   performanceOutcomes();
-  img.setAttribute('src', '/Resources/Educational-Games/A-Day-In-The-Life/images/live-music-sign.jpg');
+  img.setAttribute('src', 'Resources/Educational-Games/A-Day-In-The-Life/images/live-music-sign.jpg');
   fadeIn(img, 1000);
 }
 
 function kellysStables() {
   performanceOutcomes();
-  img.setAttribute('src', '/Resources/Educational-Games/A-Day-In-The-Life/images/piano2.jpg');
+  img.setAttribute('src', 'Resources/Educational-Games/A-Day-In-The-Life/images/piano2.jpg');
   fadeIn(img, 1000);
 }
 
 function friarsInn() {
   performanceOutcomes();
-  img.setAttribute('src', '/Resources/Educational-Games/A-Day-In-The-Life/images/piano3.jpg');
+  img.setAttribute('src', 'Resources/Educational-Games/A-Day-In-The-Life/images/piano3.jpg');
   fadeIn(img, 1000);
 }
 
@@ -175,7 +175,7 @@ function midwest() {
   button2.onclick = clubDeLisa;
   button3.onclick = kellysStables;
   button4.onclick = friarsInn;
-  img.setAttribute('src', '/Resources/Educational-Games/A-Day-In-The-Life/images/midwest.jpg');
+  img.setAttribute('src', 'Resources/Educational-Games/A-Day-In-The-Life/images/midwest.jpg');
   fadeIn(img, 1000);
 }
 
@@ -183,25 +183,25 @@ function midwest() {
 
 function saengerTheatre() {
   performanceOutcomes();
-  img.setAttribute('src', '/Resources/Educational-Games/A-Day-In-The-Life/images/jazz-club1.jpg');
+  img.setAttribute('src', 'Resources/Educational-Games/A-Day-In-The-Life/images/jazz-club1.jpg');
   fadeIn(img, 1000);
 }
 
 function Tabernacle() {
   performanceOutcomes();
-  img.setAttribute('src', '/Resources/Educational-Games/A-Day-In-The-Life/images/live-music-sign.jpg');
+  img.setAttribute('src', 'Resources/Educational-Games/A-Day-In-The-Life/images/live-music-sign.jpg');
   fadeIn(img, 1000);
 }
 
 function douglassTheatre() {
   performanceOutcomes();
-  img.setAttribute('src', '/Resources/Educational-Games/A-Day-In-The-Life/images/piano2.jpg');
+  img.setAttribute('src', 'Resources/Educational-Games/A-Day-In-The-Life/images/piano2.jpg');
   fadeIn(img, 1000);
 }
 
 function carverTheatre() {
   performanceOutcomes();
-  img.setAttribute('src', '/Resources/Educational-Games/A-Day-In-The-Life/images/piano3.jpg');
+  img.setAttribute('src', 'Resources/Educational-Games/A-Day-In-The-Life/images/piano3.jpg');
   fadeIn(img, 1000);
 }
 
@@ -215,7 +215,7 @@ function south() {
   button2.onclick = Tabernacle;
   button3.onclick = douglassTheatre;
   button4.onclick = carverTheatre;
-  img.setAttribute('src', '/Resources/Educational-Games/A-Day-In-The-Life/images/south.jpg');
+  img.setAttribute('src', 'Resources/Educational-Games/A-Day-In-The-Life/images/south.jpg');
   fadeIn(img, 1000);
 }
 
@@ -223,25 +223,25 @@ function south() {
 
 function pearlTheatre() {
   performanceOutcomes();
-  img.setAttribute('src', '/Resources/Educational-Games/A-Day-In-The-Life/images/jazz-club1.jpg');
+  img.setAttribute('src', 'Resources/Educational-Games/A-Day-In-The-Life/images/jazz-club1.jpg');
   fadeIn(img, 1000);
 }
 
 function harlemAlhambra() {
   performanceOutcomes();
-  img.setAttribute('src', '/Resources/Educational-Games/A-Day-In-The-Life/images/live-music-sign.jpg');
+  img.setAttribute('src', 'Resources/Educational-Games/A-Day-In-The-Life/images/live-music-sign.jpg');
   fadeIn(img, 1000);
 }
 
 function southland() {
   performanceOutcomes();
-  img.setAttribute('src', '/Resources/Educational-Games/A-Day-In-The-Life/images/piano2.jpg');
+  img.setAttribute('src', 'Resources/Educational-Games/A-Day-In-The-Life/images/piano2.jpg');
   fadeIn(img, 1000);
 }
 
 function bohemianCaverns() {
   performanceOutcomes();
-  img.setAttribute('src', '/Resources/Educational-Games/A-Day-In-The-Life/images/piano3.jpg');
+  img.setAttribute('src', 'Resources/Educational-Games/A-Day-In-The-Life/images/piano3.jpg');
   fadeIn(img, 1000);
 }
 
@@ -255,7 +255,7 @@ function eastCoast() {
   button2.onclick = harlemAlhambra;
   button3.onclick = southland;
   button4.onclick = bohemianCaverns;
-  img.setAttribute('src', '/Resources/Educational-Games/A-Day-In-The-Life/images/east-coast.jpg');
+  img.setAttribute('src', 'Resources/Educational-Games/A-Day-In-The-Life/images/east-coast.jpg');
   fadeIn(img, 1000);
 }
 
@@ -270,32 +270,32 @@ function goOnTour() {
   button2.onclick = midwest;
   button3.onclick = south;
   button4.onclick = eastCoast;
-  img.setAttribute('src', '/Resources/Educational-Games/A-Day-In-The-Life/images/statue-of-liberty.jpg');
+  img.setAttribute('src', 'Resources/Educational-Games/A-Day-In-The-Life/images/statue-of-liberty.jpg');
   fadeIn(img, 1000);
 }
 
 // local gigs option
 function famousDoor() {
   performanceOutcomes();
-  img.setAttribute('src', '/Resources/Educational-Games/A-Day-In-The-Life/images/jazz-club1.jpg');
+  img.setAttribute('src', 'Resources/Educational-Games/A-Day-In-The-Life/images/jazz-club1.jpg');
   fadeIn(img, 1000);
 }
 
 function jimmmyRyan() {
   performanceOutcomes();
-  img.setAttribute('src', '/Resources/Educational-Games/A-Day-In-The-Life/images/live-music-sign.jpg');
+  img.setAttribute('src', 'Resources/Educational-Games/A-Day-In-The-Life/images/live-music-sign.jpg');
   fadeIn(img, 1000);
 }
 
 function onyx() {
   performanceOutcomes();
-  img.setAttribute('src', '/Resources/Educational-Games/A-Day-In-The-Life/images/piano2.jpg');
+  img.setAttribute('src', 'Resources/Educational-Games/A-Day-In-The-Life/images/piano2.jpg');
   fadeIn(img, 1000);
 }
 
 function villageVanguard() {
   performanceOutcomes();
-  img.setAttribute('src', '/Resources/Educational-Games/A-Day-In-The-Life/images/piano3.jpg');
+  img.setAttribute('src', 'Resources/Educational-Games/A-Day-In-The-Life/images/piano3.jpg');
   fadeIn(img, 1000);
 }
 
@@ -309,7 +309,7 @@ function getGigs() {
   button2.onclick = onyx;
   button3.onclick = famousDoor;
   button4.onclick = villageVanguard;
-  img.setAttribute('src', '/Resources/Educational-Games/A-Day-In-The-Life/images/nyc-cityscape.jpg');
+  img.setAttribute('src', 'Resources/Educational-Games/A-Day-In-The-Life/images/nyc-cityscape.jpg');
   fadeIn(img, 1000);
 }
 
@@ -335,14 +335,14 @@ function teaching() {
     money += 10;
     earnings.innerHTML = `Total earnings: $ ${money}`;
   }
-  img.setAttribute('src', '/Resources/Educational-Games/A-Day-In-The-Life/images/piano.jpg');
+  img.setAttribute('src', 'Resources/Educational-Games/A-Day-In-The-Life/images/piano.jpg');
   fadeIn(img, 1000);
 }
 
 // higher ed function
 function getEducated() {
   message.innerHTML = 'You were denied acceptance to the conservatory because you are black';
-  img.setAttribute('src', '/Resources/Educational-Games/A-Day-In-The-Life/images/music-hall1.jpg');
+  img.setAttribute('src', 'Resources/Educational-Games/A-Day-In-The-Life/images/music-hall1.jpg');
   fadeIn(img, 1000);
 }
 
@@ -357,7 +357,7 @@ button4.onclick = getEducated;
 function goHome() {
   message.innerHTML = 'Welcome home!';
   earnings.innerHTML = `Total earnings: $ ${money}`;
-  img.setAttribute('src', '/Resources/Educational-Games/A-Day-In-The-Life/images/new-york-cityscape.jpg');
+  img.setAttribute('src', 'Resources/Educational-Games/A-Day-In-The-Life/images/new-york-cityscape.jpg');
   fadeIn(img, 1000);
   button1.innerHTML = 'Tour';
   button2.innerHTML = 'Local';
