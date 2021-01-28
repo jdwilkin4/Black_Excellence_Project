@@ -302,12 +302,9 @@ nav .nav-links:hover:not(:first-child) {
 }
 
 .fa-instagram-square {
-  color: #4c5fd7;
+  color: #8a3ab9;
 }
 
-.fa-youtube {
-  color: #ff0000;
-}
 
 /*Footer styles*/
 .footer-container {
@@ -316,6 +313,7 @@ nav .nav-links:hover:not(:first-child) {
   grid-template-columns: 1fr 1fr 1fr;
   background-color: rgb(189, 64, 189);
   column-gap: 10px;
+  margin-top: 40px;
 }
 
 .footer-links {

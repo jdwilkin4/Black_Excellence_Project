@@ -1,5 +1,3 @@
-
-
 // fadin for homepage title
 const el = document.getElementById('home-title');
 
@@ -20,3 +18,4 @@ const fadeIn = (el, time) => {
 };
 
 fadeIn(el, 5000);
+
