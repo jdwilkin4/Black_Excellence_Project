@@ -11,22 +11,22 @@ let clicks = 0;
 
 
 let cardArray = [
-  { name: "Nina Simone", img: "/Composers/Nina-Simone/nina-profile.jpg", }, 
-  { name: "Nina Simone", img: "/Composers/Nina-Simone/nina-profile.jpg", }, 
-  { name: "Harry Burleigh", img: "/Composers/Harry-Burleigh/harry-burleigh.jpeg", }, 
-  { name: "Harry Burleigh", img: "/Composers/Harry-Burleigh/harry-burleigh.jpeg", },
-  { name: "Duke Ellington", img: "/Composers/Duke-Ellington/duke-profile.jpg", }, 
-  { name: "Duke Ellington", img: "/Composers/Duke-Ellington/duke-profile.jpg", },
-  { name: "Eleanor Alberga", img: "/Composers/Eleanor-Alberga/eleanor-alberga-1.jpg", },
-  { name: "Eleanor Alberga", img: "/Composers/Eleanor-Alberga/eleanor-alberga-1.jpg", }, 
-  { name: "Eubie Blake", img: "/Composers/Eubie-Blake/eubie-blake-profile.jpg", },
-  { name: "Eubie Blake", img: "/Composers/Eubie-Blake/eubie-blake-profile.jpg", }, 
-  { name: "Florence Price", img: "/Composers/Florence-Price/Price-color.png", },
-  { name: "Florence Price", img: "/Composers/Florence-Price/Price-color.png", },
-  { name: "Francis B. Johnson", img: "/Composers/Francis-B-Johnson/francis-johnson-profile.jpg", },
-  { name: "Francis B. Johnson", img: "/Composers/Francis-B-Johnson/francis-johnson-profile.jpg", },
-  { name: "Margaret Bonds", img: "/Composers/Margaret-Bonds/Margaret-Bonds.jpg", },
-  { name: "Margaret Bonds", img: "/Composers/Margaret-Bonds/Margaret-Bonds.jpg", }, 
+  { name: "Nina Simone", img: "/Composers/Nina-Simone/nina-profile.jpg", alt:"Nina Simone Picture" }, 
+  { name: "Nina Simone", img: "/Composers/Nina-Simone/nina-profile.jpg", alt:"Nina Simone Picture" }, 
+  { name: "Harry Burleigh", img: "/Composers/Harry-Burleigh/harry-burleigh.jpeg", alt:"Harry Burleigh Picture" }, 
+  { name: "Harry Burleigh", img: "/Composers/Harry-Burleigh/harry-burleigh.jpeg", alt:"Harry Burleigh Picture" },
+  { name: "Duke Ellington", img: "/Composers/Duke-Ellington/duke-profile.jpg", alt:"Duke Ellington Picture" }, 
+  { name: "Duke Ellington", img: "/Composers/Duke-Ellington/duke-profile.jpg", alt:"Duke Ellington Picture" },
+  { name: "Eleanor Alberga", img: "/Composers/Eleanor-Alberga/eleanor-alberga-1.jpg", alt:"Eleanor Alberga Picture" },
+  { name: "Eleanor Alberga", img: "/Composers/Eleanor-Alberga/eleanor-alberga-1.jpg", alt:"Eleanor Alberga Picture" }, 
+  { name: "Eubie Blake", img: "/Composers/Eubie-Blake/eubie-blake-profile.jpg", alt:"Eubie Blake Picture" },
+  { name: "Eubie Blake", img: "/Composers/Eubie-Blake/eubie-blake-profile.jpg", alt:"Eubie Blake Picture" }, 
+  { name: "Florence Price", img: "/Composers/Florence-Price/Price-color.png", alt:"Florence Price Picture" },
+  { name: "Florence Price", img: "/Composers/Florence-Price/Price-color.png", alt:"Florence Price Picture" },
+  { name: "Francis B. Johnson", img: "/Composers/Francis-B-Johnson/francis-johnson-profile.jpg", alt:"Francis B. Johnson Picture" },
+  { name: "Francis B. Johnson", img: "/Composers/Francis-B-Johnson/francis-johnson-profile.jpg", alt:"Francis B. Johnson Picture" },
+  { name: "Margaret Bonds", img: "/Composers/Margaret-Bonds/Margaret-Bonds.jpg", alt:"Margaret Bonds Picture" },
+  { name: "Margaret Bonds", img: "/Composers/Margaret-Bonds/Margaret-Bonds.jpg", alt:"Margaret Bonds Picture"  }, 
 ]; 
 
 //add event listeners to each image
@@ -90,13 +90,14 @@ function checkForMatch() {
 
 function checkWon() {
     if (cardsWon == cardArray.length / 2) {
-        winnerMessage.innerHTML = `Winner! It took you ${clicks} tries to win the game`
+        winnerMessage.innerHTML = `You found all ${cardsWon} matches! It took you ${clicks} tries to win the game`
     }
 }
 
 function replay() { 
     arrangeCard(); 
     grid.innerHTML = "";
+    winnerMessage.innerHTML = "";
     createBoard(grid, cardArray);
     cardsWon = 0;
     clicks = 0; 
