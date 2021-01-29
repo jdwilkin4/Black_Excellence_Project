@@ -9,7 +9,7 @@ let numOfCorrectAnswers = 0;
 
 const quizQuestions = [
     {
-        question:'What age did Duke Ellington earn his nickname “Duke”?',
+        question:'1. What age did Duke Ellington earn his nickname “Duke”?',
         answer:{
             a:10,
             b:20,
@@ -19,7 +19,7 @@ const quizQuestions = [
         correctAnswer:"c"
     },
     {
-        question:'What decade did Duke Ellington tour Europe?',
+        question:'2. What decade did Duke Ellington tour Europe?',
         answer:{
             a:"1920's",
             b:"1930's",
@@ -29,7 +29,7 @@ const quizQuestions = [
         correctAnswer:"b"
     },
     {
-        question:'Which piece did Duke Ellington NOT write?',
+        question:'3. Which piece did Duke Ellington NOT write?',
         answer:{
             a:"Concerto for Cootie",
             b:"Cotton Tail",
@@ -39,7 +39,7 @@ const quizQuestions = [
         correctAnswer:"d"
     },
     {
-        question:'What was the name of Duke’s wife?',
+        question:'4. What was the name of Duke’s wife?',
         answer:{
             a:	"Edna Thompson", 
             b:	"Ella fitzgerald",
@@ -49,7 +49,7 @@ const quizQuestions = [
         correctAnswer:"a"
     },
     {
-        question:'What year did Duke Ellington pass away?',
+        question:'5. What year did Duke Ellington pass away?',
         answer:{
             a:	1980,
             b:	1990,
