@@ -179,6 +179,7 @@ nav .nav-links:hover:not(:first-child) {
 }
 
 .artist-links {
+  text-align: center;
   font-size: 1.4em;
   padding: 20px 10px;
   background-color: rgb(189, 64, 189);
@@ -350,7 +351,7 @@ nav .nav-links:hover:not(:first-child) {
 
 @media(max-width: 500px){
   .nav-links{
-    font-size: 0.5em;
+    font-size: 0.6em;
   }
 
   .main-title {
