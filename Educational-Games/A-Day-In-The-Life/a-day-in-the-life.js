@@ -127,10 +127,10 @@ function clubFlamingo() {
 // west coast options
 function westCoast() {
   selectAClub();
-  button1.innerHTML = 'The Downbeat';
-  button2.innerHTML = 'Dunbar Hotel';
-  button3.innerHTML = "Purcell's Venue";
-  button4.innerHTML = 'Club Flamingo';
+  button1.innerHTML = 'Downbeat';
+  button2.innerHTML = 'Dunbar';
+  button3.innerHTML = "Purcell's";
+  button4.innerHTML = 'Flamingo';
   button1.onclick = downbeat;
   button2.onclick = dunbar;
   button3.onclick = purcells;
@@ -207,10 +207,10 @@ function carverTheatre() {
 
 function south() {
   selectAClub();
-  button1.innerHTML = 'Saenger Theatre';
-  button2.innerHTML = 'Tabernacle Venue';
-  button3.innerHTML = 'Douglass Theatre';
-  button4.innerHTML = 'Carver Theatre';
+  button1.innerHTML = 'Saenger';
+  button2.innerHTML = 'Tabernacle';
+  button3.innerHTML = 'Douglass';
+  button4.innerHTML = 'Carver';
   button1.onclick = saengerTheatre;
   button2.onclick = Tabernacle;
   button3.onclick = douglassTheatre;
@@ -247,10 +247,10 @@ function bohemianCaverns() {
 
 function eastCoast() {
   selectAClub();
-  button1.innerHTML = 'Pearl Theatre';
-  button2.innerHTML = 'Harlem Alhambra';
-  button3.innerHTML = 'Southland Venue';
-  button4.innerHTML = 'Bohemian Caverns';
+  button1.innerHTML = 'Pearl';
+  button2.innerHTML = 'Alhambra';
+  button3.innerHTML = 'Southland';
+  button4.innerHTML = 'Bohemian';
   button1.onclick = pearlTheatre;
   button2.onclick = harlemAlhambra;
   button3.onclick = southland;
