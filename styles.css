@@ -362,6 +362,10 @@ nav .nav-links:hover:not(:first-child) {
     font-size: .9em;
   }
 
+ .resources-container {
+    font-size: .7em;
+  }
+
   .video {
     width: 300px;
     height: 200px;
@@ -373,7 +377,6 @@ nav .nav-links:hover:not(:first-child) {
 }
 
 @media (max-width: 460px) {
- 
   .footer-links {
     font-size: 0.5em;
   }
