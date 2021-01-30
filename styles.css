@@ -22,9 +22,6 @@ body {
   font-size: 20px;
 }
 
-body.fade {
-  opacity: 0;
-}
 
 /*  Navbar  */
 nav {
@@ -80,7 +77,7 @@ nav .nav-links:hover:not(:first-child) {
 
 .main-title {
   margin: 150px auto 20px;
-  box-shadow: 5px 15px 3px 2px black;
+  box-shadow: 5px 5px 3px 2px black;
   padding: 20px;
   border-radius: 15px;
   max-width: fit-content;
@@ -108,7 +105,7 @@ nav .nav-links:hover:not(:first-child) {
 .home-img {
   display: block;
   margin: 0 auto;
-  box-shadow: 5px 5px 3px 2px black;
+  box-shadow: 10px 10px 3px 2px black;
   border-radius: 20px;
   max-width: 80%;
 }
@@ -151,6 +148,21 @@ nav .nav-links:hover:not(:first-child) {
   font-family: "Righteous", cursive;
 }
 
+/*  Listen page styles  */
+
+.video {
+  display: block;
+  margin: 50px auto;
+  width: 500px;
+  height: 300px;
+  border: none;
+}
+
+.discover-more {
+  font-size: 1.2em;
+  text-align: center; 
+  margin: 50px 0;
+}
 
 /*  ARTIST LINKS AND RESOURCES  */
 
@@ -295,6 +307,10 @@ nav .nav-links:hover:not(:first-child) {
   color: #8a3ab9;
 }
 
+.fa-youtube {
+  color: #c4302b;
+}
+
 
 /*Footer styles*/
 .footer-container {
@@ -312,6 +328,7 @@ nav .nav-links:hover:not(:first-child) {
   color: white;
 }
 
+/*  Media Queries */
 @media (max-width: 700px){
   .hero-img {
     display: none;
@@ -319,9 +336,15 @@ nav .nav-links:hover:not(:first-child) {
 }
 
 @media (max-width: 630px) {
+  .video {
+    width: 400px;
+    height: 200px;
+  }
+
   .footer-container {
     grid-template-columns: 1fr 1fr;
   }
+
 }
 
 @media(max-width: 500px){
@@ -334,6 +357,15 @@ nav .nav-links:hover:not(:first-child) {
   }
 
   .artist-links {
+    font-size: .9em;
+  }
+
+  .video {
+    width: 300px;
+    height: 200px;
+  }
+
+  .discover-more {
     font-size: .9em;
   }
 }
