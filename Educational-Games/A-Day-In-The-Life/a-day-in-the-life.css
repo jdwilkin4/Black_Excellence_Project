@@ -14,7 +14,7 @@ img {
 }
 
 .container {
-    min-width: 500px;
+    min-width: 300px;
     width: 70%;
     box-shadow: 5px 5px 5px #c74ac7;
     margin: 3% auto;
