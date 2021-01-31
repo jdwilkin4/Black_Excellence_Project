@@ -3,6 +3,7 @@ https://blackexcellencemusicproject.com/
 
 ![Black Excellenc Music Project Homepage](https://www.dropbox.com/s/d56k2su5ij3ld6i/homepage.png?raw=1)
 
+![About page](https://www.dropbox.com/s/wag8wfrlcyjeygz/Screen%20Shot%202021-01-31%20at%203.50.26%20AM.png?raw=1)
 
 ## 20 Jazz and Classical composer pages
 
