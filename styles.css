@@ -35,7 +35,7 @@ nav {
   display: inline-block;
   border-radius: 5px;
   margin: 10px 5px;
-  padding: 10px;
+  padding: 5px;
   color: rgb(189, 64, 189);
   font-size: 0.8em;
   text-decoration: none;
@@ -53,6 +53,12 @@ nav .active {
 
 nav .nav-links:hover:not(:first-child) {
   background-color: #7d107d;
+}
+
+#logo {
+  color: white;
+  background-color: #7d107d;
+  transform:skewX(-10deg);
 }
 
 /*Home page styles*/
