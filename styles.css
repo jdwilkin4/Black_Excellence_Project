@@ -93,6 +93,10 @@ nav .nav-links:hover:not(:first-child) {
   font-size: 1.7em;
 }
 
+.home-links {
+  color: white;
+}
+
 #home-para {
   font-size: 1.5em;
   text-align: center;
