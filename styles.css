@@ -81,11 +81,22 @@ nav .nav-links:hover:not(:first-child) {
   letter-spacing: 5px;
 }
 
-
-.main-title {
-  margin: 150px auto 20px;
+.main-title, .main-header {
   box-shadow: 5px 5px 3px 2px black;
   padding: 20px;
+  max-width: fit-content;
+  color: white;
+  font-size: 1.7em;
+}
+
+.main-header {
+  margin: 150px auto 10px;
+  background-color: #7d107d;
+}
+
+
+.main-title {
+  margin: 100px auto 10px;
   border-radius: 15px;
   max-width: fit-content;
   background-color: rgb(189, 64, 189);
