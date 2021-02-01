@@ -6,6 +6,7 @@ document.getElementById('navMenu').innerHTML = `
     <a class="nav-links" id='about-link' href="../../about.html">About</a>
     <a class="nav-links" id='composers-link' href="../../composers.html">Composers</a>
     <a class="nav-links" id='listen-link' href="../../listen.html">Listen</a>
+    <a class="nav-links" id='games-link' href="../../games.html">Games</a>
     <a class="nav-links" id='resources-link' href="../../resources.html">Resources</a>
     <a class="nav-links" id='contact-link' href="../../contact.html">Contact</a>
 </nav> 
