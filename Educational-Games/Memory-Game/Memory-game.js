@@ -10,7 +10,7 @@ let cardsWon = 0;
 let clicks = 0;
 
 
-let cardArray = [
+let imgArr = [
   { name: "Nina Simone", img: "../../Composers/Nina-Simone/nina-profile.jpg", alt:"Nina Simone Picture" }, 
   { name: "Nina Simone", img: "../../Composers/Nina-Simone/nina-profile.jpg", alt:"Nina Simone Picture" }, 
   { name: "Harry Burleigh", img: "../../Composers/Harry-Burleigh/harry-burleigh.jpeg", alt:"Harry Burleigh Picture" }, 
@@ -31,11 +31,11 @@ let cardArray = [
 
 //add event listeners to each image
 document.addEventListener("DOMContentLoaded", function () {
-    createBoard(grid, cardArray); 
+    createBoard(grid, imgArr); 
     arrangeCard();
     imgs = document.querySelectorAll("img");
     Array.from(imgs).forEach(img => 
-    img.addEventListener("click", flipCard)
+    img.addEventListener("click", flip)
     ) 
 });
 
@@ -45,24 +45,24 @@ function createBoard(grid, array) {
     let img = document.createElement("img"); 
     img.setAttribute("src", "../Memory-Game/music-notes.png");
     img.setAttribute("data-id", index);
-    img.addEventListener("click", flipCard) 
+    img.addEventListener("click", flip) 
     grid.appendChild(img); 
     })
 }
 
 //randomly sort cards after each game
 function arrangeCard() { 
-    cardArray.sort(() => 0.5 - Math.random())
+    imgArr.sort(() => 0.5 - Math.random())
 }
 
 
-function flipCard() { 
+function flip() { 
     let selected = this.dataset.id;
-    let clicked =cardArray[selected].name
+    let clicked =imgArr[selected].name
     cardsSelected.push(clicked); 
     cardsId.push(selected); 
     this.classList.add("flip"); 
-    this.setAttribute("src", cardArray[selected].img); 
+    this.setAttribute("src", imgArr[selected].img); 
     if (cardsId.length === 2) { 
         setTimeout(checkForMatch, 500);
     } 
@@ -75,7 +75,7 @@ function checkForMatch() {
     if (cardsSelected[0] === cardsSelected[1] && firstCard !== secondCard) { 
         cardsWon += 1; 
         scoreBoard.innerHTML = cardsWon; 
-        setTimeout(checkWon,500) 
+        setTimeout(winner,500) 
     } else { 
         imgs[firstCard].setAttribute("src", "../Memory-Game/music-notes.png");
         imgs[secondCard].setAttribute("src", "../Memory-Game/music-notes.png"); 
@@ -88,17 +88,18 @@ function checkForMatch() {
     clickBoard.innerHTML = clicks; 
 }
 
-function checkWon() {
-    if (cardsWon == cardArray.length / 2) {
-        winnerMessage.innerHTML = `You found all ${cardsWon} matches! It took you ${clicks} tries to win the game`
+function winner() {
+    if (cardsWon == imgArr.length / 2) {
+        window.scrollTo(0, 0);
+        winnerMessage.innerHTML = `You found all ${cardsWon} matches! It took you ${clicks} tries to win the game`    
     }
 }
 
-function replay() { 
+function reset() { 
     arrangeCard(); 
     grid.innerHTML = "";
     winnerMessage.innerHTML = "";
-    createBoard(grid, cardArray);
+    createBoard(grid, imgArr);
     cardsWon = 0;
     clicks = 0; 
     clickBoard.innerHTML = 0; 
@@ -106,4 +107,4 @@ function replay() {
 }
 
 const button = document.getElementById('custom-btn');
-button.addEventListener('click', replay)
+button.addEventListener('click', reset)
