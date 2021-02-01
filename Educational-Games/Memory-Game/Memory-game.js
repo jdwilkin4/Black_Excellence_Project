@@ -1,14 +1,50 @@
 let grid = document.querySelector(".grid");
 let scoreBoard = document.querySelector(".scoreBoard"); 
-let playAgain = document.querySelector(".playAgain"); 
 let clickBoard = document.querySelector(".clickBoard"); 
-let winnerMessage = document.getElementById('winner-msg')
+let message = document.getElementById('message')
 let imgs; 
 let cardsId = []; 
 let cardsSelected = []; 
 let cardsWon = 0; 
 let clicks = 0;
+let gameMsg;
 
+// fisher yates shuffle for the array responses
+function shuffle(array) {
+  let remainingElements = array.length; let temp; let i;
+
+  while (remainingElements) {
+    i = Math.floor(Math.random() * remainingElements--);
+
+    temp = array[remainingElements];
+    array[remainingElements] = array[i];
+    array[i] = temp;
+  }
+  const randomNum = Math.floor(Math.random() * array.length);
+  gameMsg = array[randomNum];
+
+  return gameMsg;
+}
+
+const gotAMatchResponses = [
+  "You're Awesome!",
+  "Keep it up",
+  "Rockstar",
+  "Loving it",
+  "You rock!",
+  "Way to go!"
+]
+
+const noMatchResponses = [
+  "Not quite",
+  "Keep trying!",
+  "Try again",
+  "Better luck next time",
+  "Darn!",
+  "Rats!",
+  "Ooops",
+  "You can do it"
+]
 
 let imgArr = [
   { name: "Nina Simone", img: "../../Composers/Nina-Simone/nina-profile.jpg", alt:"Nina Simone Picture" }, 
@@ -73,10 +109,14 @@ function checkForMatch() {
     let firstCard = cardsId[0];
     let secondCard = cardsId[1];
     if (cardsSelected[0] === cardsSelected[1] && firstCard !== secondCard) { 
+        shuffle(gotAMatchResponses)
+        message.innerHTML = gameMsg
         cardsWon += 1; 
         scoreBoard.innerHTML = cardsWon; 
         setTimeout(winner,500) 
     } else { 
+        shuffle(noMatchResponses)
+        message.innerHTML = gameMsg
         imgs[firstCard].setAttribute("src", "../Memory-Game/music-notes.png");
         imgs[secondCard].setAttribute("src", "../Memory-Game/music-notes.png"); 
         imgs[firstCard].classList.remove("flip"); 
@@ -91,14 +131,14 @@ function checkForMatch() {
 function winner() {
     if (cardsWon == imgArr.length / 2) {
         window.scrollTo(0, 0);
-        winnerMessage.innerHTML = `You found all ${cardsWon} matches! It took you ${clicks} tries to win the game`    
+        message.innerHTML = `You found all ${cardsWon} matches! It took you ${clicks} tries to win the game`    
     }
 }
 
 function reset() { 
     arrangeCard(); 
     grid.innerHTML = "";
-    winnerMessage.innerHTML = "";
+    message.innerHTML = "";
     createBoard(grid, imgArr);
     cardsWon = 0;
     clicks = 0; 
