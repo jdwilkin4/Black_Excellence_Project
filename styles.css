@@ -82,7 +82,6 @@ nav .nav-links:hover:not(:first-child) {
 }
 
 .main-title, .main-header {
-  box-shadow: 5px 5px 3px 2px black;
   padding: 20px;
   max-width: fit-content;
   color: white;
@@ -338,10 +337,11 @@ nav .nav-links:hover:not(:first-child) {
 
 /*Footer styles*/
 .footer-container {
+  border-top: 5px solid #7d107d;
   padding: 15px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: rgb(189, 64, 189);
+  background-color: white;
   column-gap: 10px;
   margin-top: 40px;
 }
@@ -349,7 +349,6 @@ nav .nav-links:hover:not(:first-child) {
 .footer-links {
   font-size: 1em;
   margin: 10px 0;
-  color: white;
 }
 
 /*  Media Queries */
