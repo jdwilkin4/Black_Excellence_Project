@@ -83,9 +83,12 @@ nav .nav-links:hover:not(:first-child) {
 
 .main-title, .main-header {
   padding: 20px;
-  max-width: fit-content;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
   color: white;
   font-size: 1.7em;
+  text-align: center;
 }
 
 .main-header {
@@ -97,7 +100,6 @@ nav .nav-links:hover:not(:first-child) {
 .main-title {
   margin: 100px auto 10px;
   border-radius: 15px;
-  max-width: fit-content;
   background-color: rgb(189, 64, 189);
   color: white;
   font-size: 1.7em;
