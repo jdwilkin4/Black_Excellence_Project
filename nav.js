@@ -1,7 +1,7 @@
 // main navigation menu
 document.getElementById('navMenu').innerHTML = `
 <nav class="nav-bar">
-    <a class="nav-links" id='logo' href="../../index.html">BEMP</a>
+    <span class="nav-links" id='logo'>BEMP</span>
     <a class="nav-links" id='index-link' href="../../index.html">Home</a>
     <a class="nav-links" id='about-link' href="../../about.html">About</a>
     <a class="nav-links" id='composers-link' href="../../composers.html">Composers</a>
