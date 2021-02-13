@@ -126,12 +126,22 @@ nav .nav-links:hover:not(:first-child) {
   border-radius: 10px;
 }
 
-.home-img {
+.home-img, #game-img {
   display: block;
   margin: 0 auto;
   border-radius: 20px;
+}
+
+#game-img{
   max-width: 80%;
 }
+
+.home-img {
+  max-width: 300px;
+  height: 300px;
+}
+
+
 
 /* Artist page styles*/
 
@@ -353,6 +363,13 @@ nav .nav-links:hover:not(:first-child) {
 }
 
 /*  Media Queries */
+@media(max-width:775px){
+  .home-img {
+    max-width: 200px;
+    height: 200px;
+  }
+}
+
 @media (max-width: 700px){
   .hero-img {
     display: none;
@@ -369,6 +386,13 @@ nav .nav-links:hover:not(:first-child) {
     grid-template-columns: 1fr 1fr;
   }
 
+}
+
+@media(max-width:600px){
+  .home-img {
+    max-width: 100px;
+    height: 100px;
+  }
 }
 
 @media(max-width: 500px){
