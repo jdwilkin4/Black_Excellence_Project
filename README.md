@@ -1,4 +1,6 @@
 # Black Excellence Music Project
+
+A website dedicated to black artists from the past and present. 
 https://blackexcellencemusicproject.com/ 
 
 ![Black Excellenc Music Project Homepage](https://www.dropbox.com/s/d56k2su5ij3ld6i/homepage.png?raw=1)
